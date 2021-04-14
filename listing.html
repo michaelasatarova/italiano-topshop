@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="cs">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<link rel="stylesheet" href="src/css/app.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap" rel="stylesheet">
+</head>
+<body class="home-page">
+
+    <!--HEADER-->
+<header >
+    <div class="cont">
+    <div class=" hp-row">
+        <p class="disappear">Customer service 24/7 - info@italiantopshop.com</p>
+        <div class="hp-header1">
+            <p>Registration</p>
+            <p>&#9679;</p>
+            <p>My account</p>
+        </div>
+    </div>
+    </div>  
+
+    <hr class="line"/>
+
+    <div class="cont">
+    <div class="hp-row">
+            <div class="hp-header2">
+                <div onclick="menuOpen()">
+                    <svg id="openIco"  width="30" height="25" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 1.5C0 0.671573 0.671573 0 1.5 0H18.5C19.3284 0 20 0.671573 20 1.5C20 2.32843 19.3284 3 18.5 3H1.5C0.671573 3 0 2.32843 0 1.5Z" fill="#383C45"/>
+                        <path d="M0 7.5C0 6.67157 0.671573 6 1.5 6H18.5C19.3284 6 20 6.67157 20 7.5C20 8.32843 19.3284 9 18.5 9H1.5C0.671573 9 0 8.32843 0 7.5Z" fill="#383C45"/>
+                        <path d="M0 13.5C0 12.6716 0.671573 12 1.5 12H13.5C14.3284 12 15 12.6716 15 13.5C15 14.3284 14.3284 15 13.5 15H1.5C0.671573 15 0 14.3284 0 13.5Z" fill="#383C45"/>
+                    </svg>
+
+                    <svg  id="closeIco"  width="30" height="26" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.46798 0.46798C1.09195 -0.155993 2.10361 -0.155993 2.72759 0.46798L15.532 13.2724C16.156 13.8964 16.156 14.908 15.532 15.532C14.908 16.156 13.8964 16.156 13.2724 15.532L0.46798 2.72759C-0.155993 2.10361 -0.155993 1.09195 0.46798 0.46798Z" fill="#383C45"/>
+                        <path d="M15.532 0.46798C16.156 1.09195 16.156 2.10361 15.532 2.72759L2.72759 15.532C2.10361 16.156 1.09195 16.156 0.46798 15.532C-0.155993 14.908 -0.155993 13.8964 0.46798 13.2724L13.2724 0.46798C13.8964 -0.155993 14.908 -0.155993 15.532 0.46798Z" fill="#383C45"/>
+                    </svg>
+                </div>
+                
+                <div class="logo">
+                    <img src="/src/img/logo.png" alt="logo italiantopshop">
+                    <h4>ITALIANTOPSHOP<span>.COM</span></h4>  
+               </div>
+
+               <div class="hp-shopping-items">
+                    <svg class="bag" width="21" height="24" viewBox="0 0 21 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.5 7.5V6C16.5 2.71875 13.7812 0 10.5 0C7.17188 0 4.5 2.71875 4.5 6V7.5H0V20.25C0 22.3594 1.64062 24 3.75 24H17.25C19.3125 24 21 22.3594 21 20.25V7.5H16.5ZM7.5 6C7.5 4.35938 8.8125 3 10.5 3C12.1406 3 13.5 4.35938 13.5 6V7.5H7.5V6ZM15 11.625C14.3438 11.625 13.875 11.1562 13.875 10.5C13.875 9.89062 14.3438 9.375 15 9.375C15.6094 9.375 16.125 9.89062 16.125 10.5C16.125 11.1562 15.6094 11.625 15 11.625ZM6 11.625C5.34375 11.625 4.875 11.1562 4.875 10.5C4.875 9.89062 5.34375 9.375 6 9.375C6.60938 9.375 7.125 9.89062 7.125 10.5C7.125 11.1562 6.60938 11.625 6 11.625Z" fill="#383C45"/>
+                    </svg>
+                    <small>2</small>
+                </div>
+                
+            </div>
+
+            <div class="hp-header2">
+                <input type="text" placeholder="search">
+                <svg class="search" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.7812 13.8438L12.6562 10.7188C12.5 10.5938 12.3125 10.5 12.125 10.5H11.625C12.4688 9.40625 13 8.03125 13 6.5C13 2.9375 10.0625 0 6.5 0C2.90625 0 0 2.9375 0 6.5C0 10.0938 2.90625 13 6.5 13C8 13 9.375 12.5 10.5 11.625V12.1562C10.5 12.3438 10.5625 12.5312 10.7188 12.6875L13.8125 15.7812C14.125 16.0938 14.5938 16.0938 14.875 15.7812L15.75 14.9062C16.0625 14.625 16.0625 14.1562 15.7812 13.8438ZM6.5 10.5C4.28125 10.5 2.5 8.71875 2.5 6.5C2.5 4.3125 4.28125 2.5 6.5 2.5C8.6875 2.5 10.5 4.3125 10.5 6.5C10.5 8.71875 8.6875 10.5 6.5 10.5Z" fill="#636C7C"/>
+                </svg>
+            </div>
+
+            <div class="hp-header2">
+                <div class="hp-h2-group">
+                    <select id="flags">
+                        <option selected  value="it" data-imagesrc="/src/img/flags/italy.jpg"></option>
+                        <option value="cz" data-imagesrc="/src/img/flags/cz.jpg"></option>
+                        <option value="svk" data-imagesrc="/src/img/flags/svk.jpg"></option>        
+                    </select>
+                    <div class="form-group">
+                        <span id="selected"></span>
+                    </div>
+                </div>
+
+                <div class="hp-h2-group ">
+                    <div class=" bag-flex">
+                    <svg class="bag" width="21" height="24" viewBox="0 0 21 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.5 7.5V6C16.5 2.71875 13.7812 0 10.5 0C7.17188 0 4.5 2.71875 4.5 6V7.5H0V20.25C0 22.3594 1.64062 24 3.75 24H17.25C19.3125 24 21 22.3594 21 20.25V7.5H16.5ZM7.5 6C7.5 4.35938 8.8125 3 10.5 3C12.1406 3 13.5 4.35938 13.5 6V7.5H7.5V6ZM15 11.625C14.3438 11.625 13.875 11.1562 13.875 10.5C13.875 9.89062 14.3438 9.375 15 9.375C15.6094 9.375 16.125 9.89062 16.125 10.5C16.125 11.1562 15.6094 11.625 15 11.625ZM6 11.625C5.34375 11.625 4.875 11.1562 4.875 10.5C4.875 9.89062 5.34375 9.375 6 9.375C6.60938 9.375 7.125 9.89062 7.125 10.5C7.125 11.1562 6.60938 11.625 6 11.625Z" fill="#383C45"/>
+                    </svg>
+                    <small>2</small>
+                    <p class="disappear">180€</p>
+                  </div>      
+                </div>
+        </div>
+    </div>
+</div>
+
+
+<!--DROPDOWN MENU-->
+<div class="hp-row hp-dropdown-bg">
+    <div id="menu-dropdown" class=" hp-dropdown">
+        <div class="hp-dropdown-menu ">
+            <div class="hp-header3">
+                <input type="text" placeholder="search">
+                <svg class="search" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.7812 13.8438L12.6562 10.7188C12.5 10.5938 12.3125 10.5 12.125 10.5H11.625C12.4688 9.40625 13 8.03125 13 6.5C13 2.9375 10.0625 0 6.5 0C2.90625 0 0 2.9375 0 6.5C0 10.0938 2.90625 13 6.5 13C8 13 9.375 12.5 10.5 11.625V12.1562C10.5 12.3438 10.5625 12.5312 10.7188 12.6875L13.8125 15.7812C14.125 16.0938 14.5938 16.0938 14.875 15.7812L15.75 14.9062C16.0625 14.625 16.0625 14.1562 15.7812 13.8438ZM6.5 10.5C4.28125 10.5 2.5 8.71875 2.5 6.5C2.5 4.3125 4.28125 2.5 6.5 2.5C8.6875 2.5 10.5 4.3125 10.5 6.5C10.5 8.71875 8.6875 10.5 6.5 10.5Z" fill="#636C7C"/>
+                </svg>
+            </div>
+        </div>   
+
+        <div class="hp-dropdown-menu">
+            <h5>HOME</h5>
+            <div class="hp-dropdown-content">
+                <p><a href="#">Borse a mano</a></p>
+                <p><a href="#">Borse a saalla</a></p>
+                <p><a href="#"> Borse a tracolla</a></p>
+                <p><a href="#">Zaini</a></p>
+                <p><a href="#">Cartelle Dalavoro</a></p>  
+            </div>  
+        </div>   
+        
+        <div class="hp-dropdown-menu">
+            <h5>DONNA</h5>
+            <div class="hp-dropdown-content">
+                <p><a href="#">Borse a mano</a></p>
+                <p><a href="#">Borse a saalla</a></p>
+                <p><a href="#"> Borse a tracolla</a></p>
+                <p><a href="#">Zaini</a></p>
+                <p><a href="#">Cartelle Dalavoro</a></p> 
+            </div>  
+        </div> 
+
+        <div class="hp-dropdown-menu">
+            <h5>UOMO</h5>
+            <div class="hp-dropdown-content">
+                <p><a href="#">Borse a mano</a></p>
+                <p><a href="#">Borse a saalla</a></p>
+                <p><a href="#"> Borse a tracolla</a></p>
+                <p><a href="#">Zaini</a></p>
+                <p><a href="#">Cartelle Dalavoro</a></p>  
+            </div>  
+        </div> 
+
+        <div class="hp-dropdown-menu">
+            <h5>UNISEX</h5>
+            <div class="hp-dropdown-content">
+                <p><a href="#">Borse a mano</a></p>
+                <p><a href="#">Borse a saalla</a></p>
+                <p><a href="#"> Borse a tracolla</a></p>
+                <p><a href="#">Zaini</a></p>
+                <p><a href="#">Cartelle Dalavoro</a></p>  
+            </div>  
+        </div> 
+
+        <div class="hp-dropdown-menu">
+            <h5>TUTTI I PRODOTTI</h5>
+            <div class="hp-dropdown-content">
+                <p><a href="#">Borse a mano</a></p>
+                <p><a href="#">Borse a saalla</a></p>
+                <p><a href="#"> Borse a tracolla</a></p>
+                <p><a href="#">Zaini</a></p>
+                <p><a href="#">Cartelle Dalavoro</a></p>  
+            </div>  
+        </div> 
+
+        <div class="hp-dropdown-menu">
+            <h5>CONTATTI</h5>
+            <div class="hp-dropdown-content">
+                <p><a href="#">Borse a mano</a></p>
+                <p><a href="#">Borse a saalla</a></p>
+                <p><a href="#"> Borse a tracolla</a></p>
+                <p><a href="#">Zaini</a></p>
+                <p><a href="#">Cartelle Dalavoro</a></p> 
+            </div>  
+        </div>
+        
+        <div class="hp-dropdown-menu">
+            <select id="flags-menu"  class="flags-appear">
+                <option selected  value="it" data-imagesrc="/src/img/flags/italy.jpg"></option>
+                <option value="cz" data-imagesrc="/src/img/flags/cz.jpg"></option>
+                <option value="svk" data-imagesrc="/src/img/flags/svk.jpg"></option>                
+            </select>
+        </div>  
+         
+        
+    </div>
+</div>
+</header>
+
+<!--MAIN-->
+
+<main>
+    <section class="listing1">
+        <div class="listing-row">
+            <a href="#">Home</a>
+            <p>></p>
+            <a href="#">Listing</a>
+            <p>></p>
+            <a href="#">Lorem ipsum</a> 
+        </div>
+        
+        <h2>Bags</h2>
+        <p> Praesent mattis quis ipsum at malesuada. Integer in purus et erat varius ornare. Praesent sollicitudin augue dui, molestie mollis ipsum fermentum eu.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mattis quis ipsum at malesuada. Integer in purus et erat varius ornare. Praesent sollicitudin augue dui, molestie mollis ipsum fermentum eu.</p>
+    </section>
+
+    <section class="listing2">
+        <!--ACCORDION-->
+        <div class="listing-options">
+            
+            <div class="listing-filter">
+                <h3>FILTER</h3>
+                <p>clear all</p>
+            </div>
+            
+            <button class="accordion">PRICE RANGE <span>
+                <svg id="arrow-down" width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.5 8.90625C6.78125 9.1875 7.25 9.1875 7.53125 8.90625L13.625 2.84375C13.9063 2.53125 13.9063 2.0625 13.625 1.78125L12.9063 1.0625C12.625 0.78125 12.1563 0.78125 11.8438 1.0625L7 5.875L2.1875 1.0625C1.875 0.781249 1.40625 0.781249 1.125 1.0625L0.406251 1.78125C0.125001 2.0625 0.125001 2.53125 0.406251 2.84375L6.5 8.90625Z" fill="#313439"/>
+                </svg>
+
+                <svg id="arrow-up" width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.5 1.09375C7.21875 0.8125 6.75 0.8125 6.46875 1.09375L0.375 7.15625C0.09375 7.46875 0.09375 7.9375 0.375 8.21875L1.09375 8.9375C1.375 9.21875 1.84375 9.21875 2.15625 8.9375L7 4.125L11.8125 8.9375C12.125 9.21875 12.5938 9.21875 12.875 8.9375L13.5938 8.21875C13.875 7.9375 13.875 7.46875 13.5938 7.15625L7.5 1.09375Z" fill="#313439"/>
+                </svg> 
+                </span>
+            </button>	   
+            <div class="panel ">
+                 <div class="slider">
+                      <input type="range" id="custom-slider" min="0" max="200" value="100" steps="1">
+                     <div class="show-value">
+                         <span id="current-value">100€</span>
+                         <!-- <p>0 €</p> -->
+                     </div>
+                     
+                </div>
+            </div>
+
+            <button class="accordion">SIZE <span>
+                <svg id="arrow-down" width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.5 8.90625C6.78125 9.1875 7.25 9.1875 7.53125 8.90625L13.625 2.84375C13.9063 2.53125 13.9063 2.0625 13.625 1.78125L12.9063 1.0625C12.625 0.78125 12.1563 0.78125 11.8438 1.0625L7 5.875L2.1875 1.0625C1.875 0.781249 1.40625 0.781249 1.125 1.0625L0.406251 1.78125C0.125001 2.0625 0.125001 2.53125 0.406251 2.84375L6.5 8.90625Z" fill="#313439"/>
+                </svg>
+
+                <svg id="arrow-up" width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.5 1.09375C7.21875 0.8125 6.75 0.8125 6.46875 1.09375L0.375 7.15625C0.09375 7.46875 0.09375 7.9375 0.375 8.21875L1.09375 8.9375C1.375 9.21875 1.84375 9.21875 2.15625 8.9375L7 4.125L11.8125 8.9375C12.125 9.21875 12.5938 9.21875 12.875 8.9375L13.5938 8.21875C13.875 7.9375 13.875 7.46875 13.5938 7.15625L7.5 1.09375Z" fill="#313439"/>
+                </svg> 
+                </span>
+            </button>	   
+            <div class="panel">
+                <div class="check-option">
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                     </label>   
+                    <p>42</p>
+                    <small>(134)</small>
+                </div>
+            </div>
+
+            <button class="accordion">Colour <span>
+                <svg id="arrow-down" width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.5 8.90625C6.78125 9.1875 7.25 9.1875 7.53125 8.90625L13.625 2.84375C13.9063 2.53125 13.9063 2.0625 13.625 1.78125L12.9063 1.0625C12.625 0.78125 12.1563 0.78125 11.8438 1.0625L7 5.875L2.1875 1.0625C1.875 0.781249 1.40625 0.781249 1.125 1.0625L0.406251 1.78125C0.125001 2.0625 0.125001 2.53125 0.406251 2.84375L6.5 8.90625Z" fill="#313439"/>
+                </svg>
+
+                <svg id="arrow-up" width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.5 1.09375C7.21875 0.8125 6.75 0.8125 6.46875 1.09375L0.375 7.15625C0.09375 7.46875 0.09375 7.9375 0.375 8.21875L1.09375 8.9375C1.375 9.21875 1.84375 9.21875 2.15625 8.9375L7 4.125L11.8125 8.9375C12.125 9.21875 12.5938 9.21875 12.875 8.9375L13.5938 8.21875C13.875 7.9375 13.875 7.46875 13.5938 7.15625L7.5 1.09375Z" fill="#313439"/>
+                </svg> 
+                </span>
+            </button>
+            <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <button class="accordion">Brand <span>
+                <svg id="arrow-down" width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.5 8.90625C6.78125 9.1875 7.25 9.1875 7.53125 8.90625L13.625 2.84375C13.9063 2.53125 13.9063 2.0625 13.625 1.78125L12.9063 1.0625C12.625 0.78125 12.1563 0.78125 11.8438 1.0625L7 5.875L2.1875 1.0625C1.875 0.781249 1.40625 0.781249 1.125 1.0625L0.406251 1.78125C0.125001 2.0625 0.125001 2.53125 0.406251 2.84375L6.5 8.90625Z" fill="#313439"/>
+                </svg>
+
+                <svg id="arrow-up" width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.5 1.09375C7.21875 0.8125 6.75 0.8125 6.46875 1.09375L0.375 7.15625C0.09375 7.46875 0.09375 7.9375 0.375 8.21875L1.09375 8.9375C1.375 9.21875 1.84375 9.21875 2.15625 8.9375L7 4.125L11.8125 8.9375C12.125 9.21875 12.5938 9.21875 12.875 8.9375L13.5938 8.21875C13.875 7.9375 13.875 7.46875 13.5938 7.15625L7.5 1.09375Z" fill="#313439"/>
+                </svg> 
+                </span>
+            </button>
+            <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+
+        <div class="listing-products">
+            <nav>
+                <ul>
+                    <li>newest</li>
+                    <li>lower price</li>
+                    <li>higher price</li>
+                </ul>
+            </nav>
+            <div class="hp-new-arrivals">
+                <div class="hp-products">
+                    <div class="hp-product" >
+                        <svg class="like-product" width="21" height="19" viewBox="0 0 21 19"  xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.8906 2.03906C16.625 0.125 13.1484 0.398438 11 2.625C8.8125 0.398438 5.33594 0.125 3.07031 2.03906C0.140625 4.5 0.570312 8.52344 2.67969 10.6719L9.51562 17.6641C9.90625 18.0547 10.4141 18.2891 11 18.2891C11.5469 18.2891 12.0547 18.0547 12.4453 17.6641L19.3203 10.6719C21.3906 8.52344 21.8203 4.5 18.8906 2.03906ZM17.9531 9.34375L11.1172 16.3359C11.0391 16.4141 10.9609 16.4141 10.8438 16.3359L4.00781 9.34375C2.5625 7.89844 2.28906 5.16406 4.28125 3.48438C5.80469 2.19531 8.14844 2.39062 9.63281 3.875L11 5.28125L12.3672 3.875C13.8125 2.39062 16.1562 2.19531 17.6797 3.44531C19.6719 5.16406 19.3984 7.89844 17.9531 9.34375Z" fill="#CBA9A9"/>
+                        </svg>
+                            
+                        <br>
+                         <img src="/src/img/products/bag1.png" alt="italian bags"> 
+                         <h5>Milano style purse</h5>  
+                         <p>75 €</p>
+                    </div>
+        
+                    <div class="hp-product">
+                        <svg class="like-product" width="21" height="19" viewBox="0 0 21 19"  xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.8906 2.03906C16.625 0.125 13.1484 0.398438 11 2.625C8.8125 0.398438 5.33594 0.125 3.07031 2.03906C0.140625 4.5 0.570312 8.52344 2.67969 10.6719L9.51562 17.6641C9.90625 18.0547 10.4141 18.2891 11 18.2891C11.5469 18.2891 12.0547 18.0547 12.4453 17.6641L19.3203 10.6719C21.3906 8.52344 21.8203 4.5 18.8906 2.03906ZM17.9531 9.34375L11.1172 16.3359C11.0391 16.4141 10.9609 16.4141 10.8438 16.3359L4.00781 9.34375C2.5625 7.89844 2.28906 5.16406 4.28125 3.48438C5.80469 2.19531 8.14844 2.39062 9.63281 3.875L11 5.28125L12.3672 3.875C13.8125 2.39062 16.1562 2.19531 17.6797 3.44531C19.6719 5.16406 19.3984 7.89844 17.9531 9.34375Z" fill="#CBA9A9"/>
+                        </svg>
+                        <br>
+                         <img src="/src/img/products/bag2.png" alt="italian bags"> 
+                         <h5>Italian 100% Silk Square Scarf</h5>  
+                         <p>35 €</p>
+                    </div>
+        
+                    <div class="hp-product">
+                        <svg class="like-product" width="21" height="19" viewBox="0 0 21 19"  xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.8906 2.03906C16.625 0.125 13.1484 0.398438 11 2.625C8.8125 0.398438 5.33594 0.125 3.07031 2.03906C0.140625 4.5 0.570312 8.52344 2.67969 10.6719L9.51562 17.6641C9.90625 18.0547 10.4141 18.2891 11 18.2891C11.5469 18.2891 12.0547 18.0547 12.4453 17.6641L19.3203 10.6719C21.3906 8.52344 21.8203 4.5 18.8906 2.03906ZM17.9531 9.34375L11.1172 16.3359C11.0391 16.4141 10.9609 16.4141 10.8438 16.3359L4.00781 9.34375C2.5625 7.89844 2.28906 5.16406 4.28125 3.48438C5.80469 2.19531 8.14844 2.39062 9.63281 3.875L11 5.28125L12.3672 3.875C13.8125 2.39062 16.1562 2.19531 17.6797 3.44531C19.6719 5.16406 19.3984 7.89844 17.9531 9.34375Z" fill="#CBA9A9"/>
+                        </svg>
+                        <br>
+                         <img src="/src/img/products/bag3.png" alt="italian bags"> 
+                         <h5>Italian Silk Men Yellow Paisley Ties And Pocket Square</h5>  
+                         <p>109 €</p>
+                    </div>
+        
+                    <div class="hp-product">
+                        <svg class="like-product" width="21" height="19" viewBox="0 0 21 19"  xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.8906 2.03906C16.625 0.125 13.1484 0.398438 11 2.625C8.8125 0.398438 5.33594 0.125 3.07031 2.03906C0.140625 4.5 0.570312 8.52344 2.67969 10.6719L9.51562 17.6641C9.90625 18.0547 10.4141 18.2891 11 18.2891C11.5469 18.2891 12.0547 18.0547 12.4453 17.6641L19.3203 10.6719C21.3906 8.52344 21.8203 4.5 18.8906 2.03906ZM17.9531 9.34375L11.1172 16.3359C11.0391 16.4141 10.9609 16.4141 10.8438 16.3359L4.00781 9.34375C2.5625 7.89844 2.28906 5.16406 4.28125 3.48438C5.80469 2.19531 8.14844 2.39062 9.63281 3.875L11 5.28125L12.3672 3.875C13.8125 2.39062 16.1562 2.19531 17.6797 3.44531C19.6719 5.16406 19.3984 7.89844 17.9531 9.34375Z" fill="#CBA9A9"/>
+                        </svg>
+                        <br>
+                         <img src="/src/img/products/bag4.png" alt="italian bags"> 
+                         <h5>Italian Floral Purse</h5>  
+                         <p>24 €</p>
+                    </div>
+        
+                    <div class="hp-product">
+                        <svg class="like-product" width="21" height="19" viewBox="0 0 21 19"  xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.8906 2.03906C16.625 0.125 13.1484 0.398438 11 2.625C8.8125 0.398438 5.33594 0.125 3.07031 2.03906C0.140625 4.5 0.570312 8.52344 2.67969 10.6719L9.51562 17.6641C9.90625 18.0547 10.4141 18.2891 11 18.2891C11.5469 18.2891 12.0547 18.0547 12.4453 17.6641L19.3203 10.6719C21.3906 8.52344 21.8203 4.5 18.8906 2.03906ZM17.9531 9.34375L11.1172 16.3359C11.0391 16.4141 10.9609 16.4141 10.8438 16.3359L4.00781 9.34375C2.5625 7.89844 2.28906 5.16406 4.28125 3.48438C5.80469 2.19531 8.14844 2.39062 9.63281 3.875L11 5.28125L12.3672 3.875C13.8125 2.39062 16.1562 2.19531 17.6797 3.44531C19.6719 5.16406 19.3984 7.89844 17.9531 9.34375Z" fill="#CBA9A9"/>
+                        </svg>
+                        <br>
+                         <img src="/src/img/products/bag5.png" alt="italian bags"> 
+                         <h5>Milano style purse</h5>  
+                         <p>75 €</p>
+                    </div>
+        
+                    <div class="hp-product">
+                        <svg class="like-product" width="21" height="19" viewBox="0 0 21 19"  xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.8906 2.03906C16.625 0.125 13.1484 0.398438 11 2.625C8.8125 0.398438 5.33594 0.125 3.07031 2.03906C0.140625 4.5 0.570312 8.52344 2.67969 10.6719L9.51562 17.6641C9.90625 18.0547 10.4141 18.2891 11 18.2891C11.5469 18.2891 12.0547 18.0547 12.4453 17.6641L19.3203 10.6719C21.3906 8.52344 21.8203 4.5 18.8906 2.03906ZM17.9531 9.34375L11.1172 16.3359C11.0391 16.4141 10.9609 16.4141 10.8438 16.3359L4.00781 9.34375C2.5625 7.89844 2.28906 5.16406 4.28125 3.48438C5.80469 2.19531 8.14844 2.39062 9.63281 3.875L11 5.28125L12.3672 3.875C13.8125 2.39062 16.1562 2.19531 17.6797 3.44531C19.6719 5.16406 19.3984 7.89844 17.9531 9.34375Z" fill="#CBA9A9"/>
+                        </svg>
+                        <br>
+                         <img src="/src/img/products/bag6.png" alt="italian bags"> 
+                         <h5>Milano style purse</h5>  
+                         <p>75 €</p>
+                    </div>
+        
+                    <div class="hp-product">
+                        <svg class="like-product" width="21" height="19" viewBox="0 0 21 19"  xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.8906 2.03906C16.625 0.125 13.1484 0.398438 11 2.625C8.8125 0.398438 5.33594 0.125 3.07031 2.03906C0.140625 4.5 0.570312 8.52344 2.67969 10.6719L9.51562 17.6641C9.90625 18.0547 10.4141 18.2891 11 18.2891C11.5469 18.2891 12.0547 18.0547 12.4453 17.6641L19.3203 10.6719C21.3906 8.52344 21.8203 4.5 18.8906 2.03906ZM17.9531 9.34375L11.1172 16.3359C11.0391 16.4141 10.9609 16.4141 10.8438 16.3359L4.00781 9.34375C2.5625 7.89844 2.28906 5.16406 4.28125 3.48438C5.80469 2.19531 8.14844 2.39062 9.63281 3.875L11 5.28125L12.3672 3.875C13.8125 2.39062 16.1562 2.19531 17.6797 3.44531C19.6719 5.16406 19.3984 7.89844 17.9531 9.34375Z" fill="#CBA9A9"/>
+                        </svg>
+                        <br>
+                         <img src="/src/img/products/bag7.png" alt="italian bags"> 
+                         <h5>Milano style purse</h5>  
+                         <p>75 €</p>
+                    </div>
+        
+                    <div class="hp-product">
+                        <svg class="like-product" width="21" height="19" viewBox="0 0 21 19"  xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.8906 2.03906C16.625 0.125 13.1484 0.398438 11 2.625C8.8125 0.398438 5.33594 0.125 3.07031 2.03906C0.140625 4.5 0.570312 8.52344 2.67969 10.6719L9.51562 17.6641C9.90625 18.0547 10.4141 18.2891 11 18.2891C11.5469 18.2891 12.0547 18.0547 12.4453 17.6641L19.3203 10.6719C21.3906 8.52344 21.8203 4.5 18.8906 2.03906ZM17.9531 9.34375L11.1172 16.3359C11.0391 16.4141 10.9609 16.4141 10.8438 16.3359L4.00781 9.34375C2.5625 7.89844 2.28906 5.16406 4.28125 3.48438C5.80469 2.19531 8.14844 2.39062 9.63281 3.875L11 5.28125L12.3672 3.875C13.8125 2.39062 16.1562 2.19531 17.6797 3.44531C19.6719 5.16406 19.3984 7.89844 17.9531 9.34375Z" fill="#CBA9A9"/>
+                        </svg>
+                        <br>
+                         <img src="/src/img/products/bag8.png" alt="italian bags"> 
+                         <h5>Milano style purse</h5>  
+                         <p>75 €</p>
+                    </div>
+                </div>
+                <button>Carica altro</button>
+            </div>
+        </div>
+
+
+    </section>
+</main>
+
+
+
+
+
+
+
+<!--FOOTER-->
+<footer>
+    <section class="newsletter">
+        <div class="newsletter-row">
+        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M23.3125 0.1875L1.5625 12.7031C0.71875 13.1719 0.8125 14.3906 1.65625 14.7188L6.67188 16.8281L20.125 4.96875C20.3594 4.73438 20.7344 5.0625 20.5 5.34375L9.25 19.0781V22.875C9.25 24 10.5625 24.4219 11.2188 23.625L14.2188 19.9688L20.0312 22.4531C20.6875 22.7344 21.4844 22.3125 21.5781 21.5625L24.9531 1.3125C25.1406 0.375 24.1094 -0.28125 23.3125 0.1875Z" fill="#313439"/>
+        </svg>
+        <h4>Signup for our newsletter</h4>
+        </div>
+        <input type="email" placeholder="your email">
+        <button>Send</button>           
+    </section>
+
+    <section class="hp-footer">
+            <div class="footer-col">
+                <h5>Italiantopshop.com</h5>
+                <p>Donec lobortis ultricies lorem, ut condimentum magna. Aliquam lacus metus, laoreet imperdiet sagittis porttitor, hendrerit sit amet lectus.</p>
+                <div class="social-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21.4286 0H2.57143C1.125 0 0 1.17857 0 2.57143V21.4286C0 22.875 1.125 24 2.57143 24H9.91072V15.8571H6.53571V12H9.91072V9.10714C9.91072 5.78571 11.8929 3.91071 14.8929 3.91071C16.3929 3.91071 17.8929 4.17857 17.8929 4.17857V7.44643H16.2321C14.5714 7.44643 14.0357 8.46429 14.0357 9.53572V12H17.7321L17.1429 15.8571H14.0357V24H21.4286C22.8214 24 24 22.875 24 21.4286V2.57143C24 1.17857 22.8214 0 21.4286 0Z" fill="#5E636A"/>
+                    </svg>
+                    
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.0268 5.8125C8.59822 5.8125 5.86607 8.59822 5.86607 11.9732C5.86607 15.4018 8.59822 18.1339 12.0268 18.1339C15.4018 18.1339 18.1875 15.4018 18.1875 11.9732C18.1875 8.59822 15.4018 5.8125 12.0268 5.8125ZM12.0268 15.9911C9.83036 15.9911 8.00893 14.2232 8.00893 11.9732C8.00893 9.77679 9.77679 8.00893 12.0268 8.00893C14.2232 8.00893 15.9911 9.77679 15.9911 11.9732C15.9911 14.2232 14.2232 15.9911 12.0268 15.9911ZM19.8482 5.59821C19.8482 4.79464 19.2054 4.15179 18.4018 4.15179C17.5982 4.15179 16.9554 4.79464 16.9554 5.59821C16.9554 6.40179 17.5982 7.04464 18.4018 7.04464C19.2054 7.04464 19.8482 6.40179 19.8482 5.59821ZM23.9196 7.04464C23.8125 5.11607 23.3839 3.40179 21.9911 2.00893C20.5982 0.616071 18.8839 0.1875 16.9554 0.0803571C14.9732 -0.0267857 9.02679 -0.0267857 7.04464 0.0803571C5.11607 0.1875 3.45536 0.616071 2.00893 2.00893C0.616071 3.40179 0.1875 5.11607 0.0803571 7.04464C-0.0267857 9.02679 -0.0267857 14.9732 0.0803571 16.9554C0.1875 18.8839 0.616071 20.5446 2.00893 21.9911C3.45536 23.3839 5.11607 23.8125 7.04464 23.9196C9.02679 24.0268 14.9732 24.0268 16.9554 23.9196C18.8839 23.8125 20.5982 23.3839 21.9911 21.9911C23.3839 20.5446 23.8125 18.8839 23.9196 16.9554C24.0268 14.9732 24.0268 9.02679 23.9196 7.04464ZM21.3482 19.0446C20.9732 20.1161 20.1161 20.9196 19.0982 21.3482C17.4911 21.9911 13.7411 21.8304 12.0268 21.8304C10.2589 21.8304 6.50893 21.9911 4.95536 21.3482C3.88393 20.9196 3.08036 20.1161 2.65179 19.0446C2.00893 17.4911 2.16964 13.7411 2.16964 11.9732C2.16964 10.2589 2.00893 6.50893 2.65179 4.90179C3.08036 3.88393 3.88393 3.08036 4.95536 2.65179C6.50893 2.00893 10.2589 2.16964 12.0268 2.16964C13.7411 2.16964 17.4911 2.00893 19.0982 2.65179C20.1161 3.02679 20.9196 3.88393 21.3482 4.90179C21.9911 6.50893 21.8304 10.2589 21.8304 11.9732C21.8304 13.7411 21.9911 17.4911 21.3482 19.0446Z" fill="#5E636A"/>
+                    </svg>    
+                </div>
+            </div>
+            
+            <div class="footer-row">
+                <div class="footer-col">
+                    <h5>Categories</h5>
+                    <ul>
+                        <li><a href="#">Donna</a></li>
+                        <li><a href="#">Uomo</a></li>
+                        <li><a href="#">Unisex</a></li>
+                        <li><a href="#">Tutti Prodotti</a></li>
+                        <li><a href="#">Concacci</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h5>Help</h5>
+                    <ul>
+                        <li><a href="#">Returns Information</a></li>
+                        <li><a href="#">Shipping Information</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Sitemp</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h5>Privacy legal</h5>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+    </section>
+
+    <div class="copyright">
+        <p>© 2021 italiantopshop.com</p>
+    </div>
+
+</footer>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.rawgit.com/prashantchaudhary/ddslick/master/jquery.ddslick.min.js" ></script>
+<script src="/src/js/script.js"></script>
+</body>
+</html>
+
+

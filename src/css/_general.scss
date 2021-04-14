@@ -1,0 +1,40 @@
+//GENERAL
+*{
+    box-sizing: border-box;
+}
+
+body{
+    border-top: 5px solid #FEB592;
+    margin: auto;
+    width: 100%;
+    font-family: 'Karla', sans-serif;
+    font-size: 14px;
+    color: #5E636A;
+    }
+    
+    .line{
+        border: 1px solid #D4E2E4 ;
+    }
+    
+    h1{
+        font-size: 64px;
+        
+    }
+    h2{
+        font-size: 40px;
+    }
+    h3{
+        font-size: 32px;
+    }
+    h4{
+        font-size: 24px;
+        margin: 0;
+    }
+    
+    small{
+        font-size: 14px;
+    }
+
+    .hello{
+        color:green;
+    }
