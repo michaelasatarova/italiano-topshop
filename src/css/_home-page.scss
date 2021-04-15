@@ -3,7 +3,7 @@
 
 //header
 .cont{
-    max-width: 1920px; 
+    max-width: 90%; 
     margin: auto;
 }
 
@@ -129,13 +129,20 @@
         margin-top: 20px;
         display: flex;
         justify-content: space-around;
-        width: 1920px;
+        width: 70%;
         margin: auto;
         
-       .hp-dropdown-menu:first-child{
+       .hp-dropdown-menu:first-child {
            display:none;
            }
+        .hp-dropdown-menu:last-child  {
+            display:none;
+            }
+            .hp-dropdown-menu:nth-child(8) {
+                display:none;
+                }
        .hp-dropdown-menu{ 
+
            #flags-menu{
                display: none;
            }
@@ -149,8 +156,9 @@
             position: absolute;
             width: 257px;
             border:1px solid #E8DFDF;
-            padding: 0 20px;
-            background-color: $white;
+            background: linear-gradient(#FFFFFF, #FFF6F2);
+            line-height: 26px;
+            padding: 18px 26px ;
             a{
                 color: $grey;
                 text-decoration: none;
@@ -188,8 +196,8 @@
            max-width: 800px;
            display: flex;
            flex-direction: column;
-           justify-content: center;
            align-items: center;
+           margin-top: 120px;
            img{
                width: 145px;
            }
@@ -209,17 +217,18 @@
 
 //Doručenie
 .mw{
-    max-width: 1500px;
+    max-width: 1300px;
     margin: auto;
 }
 .hp-guarantee{
     width: 484px;
     border:1px solid #FFDCCC;
     display: flex;
-    padding: 20px;
-    justify-content: center;
+    padding: 20px 20px 30px 30px;
     align-items: center;
-    margin: 30px;
+    margin: 30px 17px;
+    border-radius: 5PX;
+    color: #FF590B;
     h5{
         margin: 15px;
         font-size: 18px;
@@ -248,9 +257,9 @@
             width: 304px;
             height: 352px;
             border:1px solid #D4E2E4;
-            box-shadow: 4px 2px 12px 6px rgba(192,204,206,0.95);
             padding: 20px;
             margin: 10px;
+            border-radius: 5px;
             .like-product{
                 float:right;
                 cursor: pointer;
@@ -264,6 +273,10 @@
                 font-size: 16px;
                 font-family: 700;
                 margin: 10px;
+            }
+            img{
+                height: 200px;
+                width: auto;
             }
         }
     }
@@ -378,9 +391,7 @@ footer{
 }
 //RESPONZIVITA
 @media screen and (max-width:1270px) {
-// body{
-//     padding: 15px;
-// }
+
 .hp-row{
     .hp-header2{
         input{
@@ -401,21 +412,41 @@ footer{
 }   
 
 @media screen and (max-width:900px) {
-    *{
-        margin:auto;
+    .line{
+        display: none;
     }
     .disappear {
       display:none;
     }
+    .italiantopshop{
+        height: 70px;
+        border-bottom: 1px solid $main;
+        *{
+            margin: auto;
+        }
+    }
+    .cont{
+        max-width: 100%;
+    }
+
     .hp-row{
         flex-direction: column;
         .hp-dropdown{
+            width: 100%;
             .hp-dropdown-menu{
+                &:hover .hp-dropdown-content{
+                    display: none;
+                }
                 .hp-dropdown-content{
                     position: relative;
                     border:0;
+                    padding: 0;
+                    margin: 0;
+                    width: 100%;
+                    line-height: 40px;
                 }
             }
+
         }
         .hp-header2{  
             width: 100%;
@@ -471,18 +502,40 @@ footer{
             .hp-dropdown-menu:first-child{
                 display:block;
             }
-            .hp-dropdown-menu:last-child{
+            .hp-dropdown-menu:last-child, .hp-dropdown-menu:nth-child(8) {
                 border-top: 1px solid #D4E2E4;
-                padding-top: 20px;
+                padding: 10px;
+                display: block;
+                .select-language{
+                    display: flex;
+                    justify-content: center;
+                    p {
+                        margin:20px 0 10px 0;
+                    }
+                    #flags-menu{
+                        margin: 10px 0;
+                        margin-top: 0;
+                    }
+                }
             }
+            .hp-dropdown-menu:nth-child(8) {
+                .hp-header1{justify-content: center;}
+                p{
+                    margin: 5px ;
+                }
+            }
+
             .hp-dropdown-menu{
                 width: 100%;
                 .hp-hropdown-content{
+                    display: none;
                     position: relative;
+                   
                 }
                 .hp-header3{
                     display:block;
                     text-align: center;
+                    margin-top: 15px;
                     input{
                         width: 450px;
                         height: 48px;
@@ -547,7 +600,23 @@ footer{
     margin: 10px auto;
 }
 
+.hp-main-bg{
+    .hp-row{
+        .hp-main-group{
+            margin-top: 50px;
+            svg{
+                width: 75px;
+                height: 75px;
+            }
+        }
+    }
+}
+
+
 .hp-new-arrivals{
+    .hp-products{
+        justify-content: center;
+    }
     h2{
         margin: 15px auto;
     }
@@ -606,7 +675,7 @@ footer{
             .hp-dropdown-menu{
                 .hp-header3{
                     input{
-                        width: 100%;
+                        width: 90%;
                     }
                     .search{
                         display: none;

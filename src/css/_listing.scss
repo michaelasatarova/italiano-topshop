@@ -24,9 +24,10 @@
 }
 
 .listing2{
-    width: 1500px;
+    max-width: 1500px;
     margin:40px auto;
     display:flex;
+    flex-wrap: wrap;
     .listing-options{
        width: 372px;
         .listing-filter{
@@ -153,7 +154,7 @@
                 padding:  0;
                 border-bottom: 1px solid #D4E2E4;
                 li{
-                    font-size: 17px;
+                    font-size: 15px;
                     margin-right: 30px;
                     cursor: pointer;
                     padding-bottom: 20px;
@@ -169,5 +170,35 @@
 }
 
 
- //PRICE SLIDER
+@media screen and (max-width:320px) {
+
+    .listing1{
+        margin: 10px;
+        p{
+            width: 300px;
+        }
+        .listing-row{
+            a, p{
+                margin: 10px 0;
+            }
+        }
+    }
+
+    .listing2{
+        .listing-products{
+            margin: 20px 0;
+            width: 100%;
+            nav{
+                ul{
+                    justify-content: space-around;
+                    margin: 10px;
+                    li{
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }  
+
+}
  
