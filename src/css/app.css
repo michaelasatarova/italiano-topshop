@@ -72,11 +72,15 @@ small {
   display: flex;
 }
 
-.hp-row .hp-header1 p {
+.hp-row .hp-header1 a {
+  text-decoration: none;
   cursor: pointer;
+  color: #5E636A;
+  margin-top: 15px;
+  font-weight: 700;
 }
 
-.hp-row .hp-header1 p:nth-child(2) {
+.hp-row .hp-header1 p {
   margin: 13px 20px;
   color: #D4E2E4;
   cursor: none;
@@ -229,6 +233,11 @@ small {
   margin: 20px 0px;
   cursor: pointer;
   font-weight: 700;
+  line-height: 30px;
+}
+
+.hp-row .hp-dropdown .hp-dropdown-menu h5 span {
+  display: none;
 }
 
 .hp-row .hp-dropdown .hp-dropdown-menu .hp-dropdown-content {
@@ -522,12 +531,24 @@ footer {
   background-color: #F5F5F5;
 }
 
-@media screen and (max-width: 1270px) {
+@media screen and (max-width: 1460px) {
+  .hp-row .hp-header2 input {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 1420px) {
+  .mw {
+    max-width: 1100px;
+  }
   .hp-row .hp-header2 input {
     width: 300px;
   }
   .hp-row img {
     width: 250px;
+  }
+  .hp-new-arrivals {
+    max-width: 980px;
   }
   .hp-footer .footer-row {
     -ms-flex-pack: distribute;
@@ -535,7 +556,10 @@ footer {
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1015px) {
+  #menu-dropdown {
+    display: none;
+  }
   .line {
     display: none;
   }
@@ -558,11 +582,26 @@ footer {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .hp-row .hp-header1 a {
+    margin: 5px;
+  }
   .hp-row .hp-dropdown {
     width: 100%;
   }
+  .hp-row .hp-dropdown .hp-dropdown-menu h5 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .hp-row .hp-dropdown .hp-dropdown-menu h5 span {
+    padding-left: 5px;
+    display: block;
+  }
   .hp-row .hp-dropdown .hp-dropdown-menu:hover .hp-dropdown-content {
-    display: none;
+    display: block;
   }
   .hp-row .hp-dropdown .hp-dropdown-menu .hp-dropdown-content {
     position: relative;
@@ -722,6 +761,8 @@ footer {
   }
   .hp-main-bg .hp-row .hp-main-group {
     margin-top: 50px;
+    width: 100%;
+    margin: auto;
   }
   .hp-main-bg .hp-row .hp-main-group svg {
     width: 75px;
@@ -778,13 +819,17 @@ footer {
     -webkit-box-align: left;
         -ms-flex-align: left;
             align-items: left;
+    max-width: 100%;
   }
   .hp-dropdown-bg {
     margin-top: 0;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 480px) {
+  body {
+    max-width: 450px;
+  }
   .hp-row .hp-header2 .logo h4 {
     font-size: 15px;
     margin: 10px auto;
@@ -804,9 +849,8 @@ footer {
     margin: 5px auto;
   }
   .hp-new-arrivals button {
-    width: 95%;
-    height: 40px;
     margin: 10px auto;
+    border-radius: 5px;
   }
   .newsletter .newsletter-row h4 {
     font-size: 15px;
@@ -816,7 +860,6 @@ footer {
   }
   .newsletter input, .newsletter button {
     width: 100%;
-    height: 30px;
     margin: 5px;
   }
 }
@@ -1027,7 +1070,7 @@ footer {
   border-bottom: 1px solid #FF590B;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 425px) {
   .listing1 {
     margin: 10px;
   }
@@ -1048,6 +1091,180 @@ footer {
   }
   .listing2 .listing-products nav ul li {
     margin-right: 0;
+  }
+}
+
+.personal-data-bg {
+  background-image: url(/src/img/hp-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  height: 701px;
+  color: #2C3435;
+}
+
+.personal-data-bg .personal-data {
+  max-width: 630px;
+  margin: 0 auto;
+}
+
+.personal-data-bg .personal-data h2 {
+  padding: 64px 0 34px 0;
+  font-family: 'Lora', serif;
+  font-weight: 400;
+  color: #2C3435;
+  margin: 0;
+}
+
+.personal-data-bg .personal-data label h5 {
+  font-size: 15px;
+  font-weight: 700;
+  text-align: left;
+  margin: 20px  0 5px 5px;
+}
+
+.personal-data-bg .personal-data label input {
+  width: 624px;
+  height: 48px;
+  border: 1px solid #D4E2E4;
+  outline: none;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 3px;
+}
+
+.personal-data-bg .personal-data .custom-checkbox {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.personal-data-bg .personal-data .custom-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.personal-data-bg .personal-data .custom-checkbox .checkmark {
+  position: absolute;
+  top: -3px;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #F3F6FA;
+  border-radius: 3px;
+}
+
+.personal-data-bg .personal-data .custom-checkbox .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.personal-data-bg .personal-data .custom-checkbox input:checked ~ .checkmark {
+  background-color: #636C7C;
+  border-radius: 3px;
+}
+
+.personal-data-bg .personal-data .custom-checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.personal-data-bg .personal-data .custom-checkbox .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.personal-data-bg .personal-data .custom-checkbox p {
+  font-size: 15px;
+  text-align: left;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.personal-data-bg .personal-data .lost-password {
+  text-align: right;
+}
+
+.personal-data-bg .personal-data .lost-password span {
+  font-weight: 700;
+  color: #FF590B;
+  text-decoration: underline;
+  padding-right: 5px;
+}
+
+.personal-data-bg .personal-data .password-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.personal-data-bg .personal-data .password-section input {
+  width: 310px;
+}
+
+.personal-data-bg .personal-data button {
+  width: 624px;
+  height: 48px;
+  outline: none;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 3px;
+  background-color: #FF590B;
+  border: none;
+  color: #fff;
+  margin: 30px 0 60px 0;
+}
+
+@media screen and (max-width: 650px) {
+  .personal-data-bg {
+    height: 100%;
+  }
+  .personal-data-bg .personal-data label h5 {
+    margin: 21px 0 5px 23px;
+  }
+  .personal-data-bg .personal-data label input {
+    max-width: 90%;
+  }
+  .personal-data-bg .personal-data .password-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .personal-data-bg .personal-data .password-section input {
+    width: 100%;
+  }
+  .personal-data-bg .personal-data .lost-password span {
+    padding-right: 23px !important;
+  }
+  .personal-data-bg .personal-data .custom-checkbox {
+    width: 90%;
+    margin: auto;
+  }
+  .personal-data-bg .personal-data button {
+    max-width: 90%;
   }
 }
 /*# sourceMappingURL=app.css.map */

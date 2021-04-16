@@ -197,17 +197,39 @@
 
 <main class="personal-data-bg">
     <div class="personal-data">
-        <h2>Login</h2>
+        <h2>Registration</h2>
+        
+        <label for="name">
+            <h5>NAME</h5>
+            <input type="name">
+        </label>
         <label for="email">
             <h5>EMAIL</h5>
             <input type="email">
         </label>
-        <label for="password">
+        <div class="password-section">
+            <label for="password">
             <h5>PASSWORD</h5>
             <input type="password">
-        </label>
+            </label>
 
-        <p class="lost-password">Lost password? Recover it <span>here</span></p>
+            <label for="password">
+                <h5>REPEAT PASSWORD</h5>
+                <input type="password">
+            </label>
+        </div>
+        
+        <label class="custom-checkbox">
+            <input type="checkbox" checked="checked">
+            <p>Duis vel turpis feugiat, cursus urna non, commodo lacus</p>
+            <span class="checkmark"></span>
+        </label>
+        <label class="custom-checkbox">
+            <input type="checkbox" >
+            <p>Mauris cursus magna id mi pharetra, eu tincidunt diam condimentum</p>
+            <span class="checkmark"></span>
+        </label>
+        
 
         <button>Login</button>
     </div>
