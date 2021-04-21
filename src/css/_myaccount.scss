@@ -1,0 +1,420 @@
+.myaccount{
+    width: 62%;
+    margin: auto;
+    .whereIam{
+        display: flex;
+        p, a{
+            padding-right: 10px;
+            font-weight: 700;
+            margin: 10px;
+        }
+        a{
+            text-decoration: none;
+            color:$grey;
+            cursor: pointer;
+        }
+        a:last-child{
+            font-weight: 400;
+        }
+    }
+    section{
+        h2{
+            font-family: 'Lora', serif;
+            line-height: 51px;
+            font-weight: 400;
+            color: $black;
+            padding: 10px;
+        }
+        }
+        .myaccount-settings{
+            display:flex;
+            .mas-col1{
+                width: 250px; 
+                margin: 0 15px;
+            }
+            .mas-col2{
+                margin-left:10%;
+            }
+            .mas-col{
+                .mas-row{
+                    display: flex;
+                    justify-content: space-between;
+                    a{
+                        text-decoration: none;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 24px;
+                        color: #636C7C ;
+                        margin: 0 20px 30px 0;
+                    }
+                    .active-link{
+                        color: $red;
+                        font-weight: 700;
+                    }
+                    a:last-child{
+                        margin: 40px 0;
+                    }
+                    .orange-line{
+                        width: 97px;
+                        height: 2px;
+                        background-color: #E0672E;
+                        margin-top: 10px;
+                    }
+                }
+
+                h4{
+                    font-family: "Lora", serif;
+                    font-weight: 400;
+                    color: $black;
+
+                }
+                .mt-5{
+                    margin-top: 50px;
+                }
+                //another property are inherited from login.scss
+                .password-section{
+                    display: flex;
+                    justify-content: space-between;
+                    width: 625px;
+                    input:first-child{
+                        margin-right: 10px;
+                    }
+                }
+                .address-section{
+                    display:flex;
+                    justify-content: space-between;
+                    input{
+                        width: 464px;
+                    }
+                    input[type=number]{
+                        width: 144px;
+                    }
+                }
+                .small-btn{
+                    width: 160px;
+                    font-size: 15px;
+                    margin-bottom: 100px;
+                }
+            }
+        }
+    
+}
+
+//ORDERS
+
+.mas-col2{
+    .orders-heading{
+     display:flex;
+     margin-bottom: 20px;
+        h5{
+           font-weight: 700; 
+           font-size: 14px;
+           color: $black;
+           margin: 0 40px;
+           width: 120px;
+        }
+    }
+
+    .orders-content:first-child {
+        border-radius: 5px 5px 0 0 ;
+    }
+    .orders-content:last-child {
+        border-radius: 0 0 5px 5px;
+        margin-bottom: 200px;
+    }
+    .orders-content{
+       display: flex; 
+       align-items: center;
+       height: 72px; 
+       border:1px solid #D3DAE7;
+       p, a{
+        margin: 10px 40px; 
+        width: 120px;
+        font-size: 16px;
+        color: $grey;
+       }
+       a{
+           text-decoration: none;
+           cursor: pointer;
+           width: 150px;
+           color: $red;
+           font-weight: 700;
+
+       }
+       .order-state-zaplatene{
+           font-weight: 700;
+           font-size: 13px;
+           color: #232BEB;
+       }
+       .order-state-zaplatene:before {
+           content:url(/src/img/order_state/zaplatene.png);
+           margin-top: 5px;
+       }
+        .order-state-odoslane{
+            font-weight: 700;
+            font-size: 13px;
+            color: #31B736;
+        }
+        .order-state-odoslane:before {
+            content:url(/src/img/order_state/odoslane.png);
+        }
+        .order-state-nezaplatene{
+            font-weight: 700;
+            font-size: 13px;
+            color: #F1271A;
+        }
+        .order-state-nezaplatene:before {
+            content:url(/src/img/order_state/nezaplatene.png);
+        }
+        
+    }
+}
+
+.mas-col2{
+   .mobile-visible{
+       display: none;
+       .order-mobile{
+           width: 600px;
+           border:1px solid #D3DAE7;
+           padding: 10px 20px;
+           border-radius: 3px;
+           h5{
+              font-size: 15px;
+              font-weight: 700; 
+              color: $black;
+              line-height: 16.37px;
+           }
+           p, a{
+            color: $grey;
+            font-size: 16px;
+            line-height: 18.7px;
+           }
+           a{
+               text-decoration: none;
+               color: $red;
+               font-weight: 700;
+               margin-top: 20px;
+           }
+           .mobile-order-flex{
+               display: flex;
+               justify-content: space-between;
+               .order-state-zaplatene{
+                font-weight: 700;
+                font-size: 13px;
+                color: #232BEB;
+            }
+            .order-state-zaplatene:before {
+                content:url(/src/img/order_state/zaplatene.png);
+                margin-top: 5px;
+            }
+             .order-state-odoslane{
+                 font-weight: 700;
+                 font-size: 13px;
+                 color: #31B736;
+             }
+             .order-state-odoslane:before {
+                 content:url(/src/img/order_state/odoslane.png);
+             }
+             .order-state-nezaplatene{
+                 font-weight: 700;
+                 font-size: 13px;
+                 color: #F1271A;
+             }
+             .order-state-nezaplatene:before {
+                 content:url(/src/img/order_state/nezaplatene.png);
+             }
+           }
+
+       } 
+    } 
+}
+
+
+
+
+
+
+@media screen and (max-width:1620px) {
+
+    .myaccount{
+        .myaccount-settings{
+            .mas-col2{
+                margin-left: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1500px) {
+
+    .myaccount{
+        .myaccount-settings{
+            .mas-col{
+                .mas-row{
+                    .orange-line{
+                        max-width: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1200px) {
+
+    .myaccount{
+        .whereIam{
+            width: 72%;
+            margin: auto;
+        }
+
+    }
+    .myaccount{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:1200px) {
+.myaccount{
+    section{
+        h2{
+        width: 600px;
+        margin:30px auto;
+        padding-left: 0;
+        }
+    }  
+}
+    .myaccount{
+        .myaccount-settings{
+            flex-direction: column;
+            align-items: center;
+            .mas-col{
+                h4{
+                    margin: 40px 0;
+                }
+            }
+            .mas-col1{
+                display: flex;
+                width: 600px;
+                margin: auto;
+                .mas-row{
+                    width: 100%;
+                    border-bottom: 1px solid #D4E2E4;
+                    .orange-line{
+                        display: none;
+                    }
+                    // a:hover{
+                    //     font-weight: 700;
+                    //     color: $red;
+                    //     border-bottom: 1px solid $red;
+                    //     margin-bottom: 0;
+                    //     padding-bottom: 25px;
+                    // }
+                    .active-link{
+                        border-bottom: 1px solid $orange;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:650px) {
+    .myaccount{
+        .myaccount-settings{
+            .mas-col1{
+                width: 90%;
+                margin: auto;
+            }
+            .mas-col{
+                .address-section{
+                    flex-direction: column;
+                    label{
+                        input{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:650px){
+form{
+    width: 100%;
+}
+    .myaccount{
+        section{
+            h2{
+                max-width: 100%;
+            }
+        }
+        .whereIam{
+            width: 100%;
+        }
+        .myaccount-settings{
+            .mas-col{
+                .personal-data{
+                    h5{
+                        margin: 10px 0;
+                    }
+                }
+                .password-section{
+                    width: 100%;
+                    input{
+                       width:100%;
+                    
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:650px){
+    .myaccount{
+        .whereIam{
+            a, p{
+                margin: 10px 0;
+            }
+        }
+    }
+}
+
+//MEDIA ORDERS
+@media screen and (max-width:1470px){
+.myaccount-settings{
+    flex-direction: column;
+    .mas-col2{
+        margin: 40px;
+    }
+}
+}
+
+@media screen and (max-width:1200px){
+    .mas-col2{
+        width: 100%;
+        .mobile-visible{
+            width: 100%;
+            .order-mobile{
+                margin: 20px auto;
+                width: 100%;
+            }
+            
+        }
+    }
+}
+
+@media screen and (max-width:1060px){
+    .myaccount-settings{
+        .desktop-visible{
+            display:none;
+        }
+        .mobile-visible{
+            display: block;
+        }
+    }
+    }

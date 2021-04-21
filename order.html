@@ -194,48 +194,130 @@
 </header>
 
 <!--MAIN-->
-
-<main class="personal-data-bg">
-    <div class="personal-data">
-        <h2>Registration</h2>
-        
-        <label for="name">
-            <h5>NAME</h5>
-            <input type="name">
-        </label>
-        <label for="email">
-            <h5>EMAIL</h5>
-            <input type="email">
-        </label>
-        <div class="password-section">
-            <label for="password">
-            <h5>PASSWORD</h5>
-            <input type="password">
+<main class="order">
+    <section class="billing-informations">
+        <h3>Billing informations</h3>
+        <p>Have an account? <a href="/login.html">Login</a></p>
+        <form>
+            <label for="name">
+                <h5>NAME</h5>
+                <input type="text" placeholder="John Doe">
             </label>
+            <div class="address-section">
+                <label for="street">
+                    <h5>STREET</h5>
+                    <input type="text" >
+                </label>
+                <label for="number">
+                    <h5>NUMBER</h5>
+                    <input type="number" >
+                </label>
+            </div>
 
-            <label for="password">
-                <h5>REPEAT PASSWORD</h5>
-                <input type="password">
+            <div class="address-section">
+                <label for="city">
+                    <h5>CITY</h5>
+                    <input type="text" >
+                </label>
+                <label for="zip">
+                    <h5>ZIP CODE</h5>
+                    <input type="number" >
+                </label>
+            </div>
+
+            <div class="contact-section">
+                <label for="phone">
+                    <h5>PHONE</h5>
+                    <input type="tel" >
+                </label>
+                <label for="email">
+                    <h5>EMAIL</h5>
+                    <input type="email" >
+                </label>
+            </div>
+            
+            <div class="order-conditions-desktop">
+                <label class="custom-checkbox">
+                    <input type="checkbox" checked="checked">
+                    <p>Duis vel turpis feugiat, cursus urna non, commodo lacus</p>
+                    <span class="checkmark"></span>
+                </label>
+                <label class="custom-checkbox">
+                    <input type="checkbox" >
+                    <p>Mauris cursus magna id mi pharetra, eu  <a href="#"> tincidunt diam condimentum</a> </p>
+                    <span class="checkmark"></span>
+                </label>
+                <label class="custom-checkbox">
+                    <input type="checkbox" >
+                    <p>Phasellus eget sapien aliquam</p>
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </form>
+    </section>
+    <div class="order-summary">
+        <h3>Order summary</h3>
+        <div class="os-item">
+            <img src="/src/img/products/bag6.png" alt="order">
+            <p class="item-name">Lorem ipsum dolor sit amet <span>M</span></p>
+            <p >M</p>
+            <p>1pcs</p>
+            <h5>39,90€</h5>
+        </div>
+
+        <div class="os-item">
+            <img src="/src/img/products/bag6.png" alt="order">
+            <p class="item-name">Lorem ipsum dolor sit amet <span>M</span></p>
+            <p>M</p>
+            <p>1pcs</p>
+            <h5>39,90€</h5>
+        </div>
+
+        <div class="total-sum">
+            <div class="ts">
+                <h5>SUBTOTAL</h5>
+                <h5>39,90€</h5>
+            </div>
+
+            <div class="ts">
+                <h5>DELIVERY</h5>
+                <h5>1€</h5>
+            </div>
+
+            <div class="ts">
+                <h5>PAYMENT</h5>
+                <h5>0€</h5>
+            </div>
+        </div>
+
+        <div class="total-price">
+            <h5>TOTAL PRICE</h5>
+            <h5>39,90€</h5>
+        </div>
+
+        <div class="order-conditions-mobile">
+            <label class="custom-checkbox">
+                <input type="checkbox" checked="checked">
+                <p>Duis vel turpis feugiat, cursus urna non, commodo lacus</p>
+                <span class="checkmark"></span>
+            </label>
+            <label class="custom-checkbox">
+                <input type="checkbox" >
+                <p>Mauris cursus magna id mi pharetra, eu  <a href="#"> tincidunt diam condimentum</a> </p>
+                <span class="checkmark"></span>
+            </label>
+            <label class="custom-checkbox">
+                <input type="checkbox" >
+                <p>Phasellus eget sapien aliquam</p>
+                <span class="checkmark"></span>
             </label>
         </div>
-        
-        <label class="custom-checkbox">
-            <input type="checkbox" checked="checked">
-            <p>Duis vel turpis feugiat, cursus urna non, commodo lacus</p>
-            <span class="checkmark"></span>
-        </label>
-        <label class="custom-checkbox">
-            <input type="checkbox" >
-            <p>Mauris cursus magna id mi pharetra, eu tincidunt diam condimentum</p>
-            <span class="checkmark"></span>
-        </label>
-        
 
-        <button>Login</button>
+        <button>Place order</button>
+
     </div>
+
 </main>
-
-
 
 <!--FOOTER-->
 <footer>

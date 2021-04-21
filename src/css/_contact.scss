@@ -1,0 +1,226 @@
+.contactus{
+    width: 62%;
+    margin: auto;
+    h2{
+        font-family: 'Lora', 'serif';
+        color:$black;
+        font-weight: 400;
+        line-height: 51px;
+    }
+}
+.contact-us-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 60px 0;
+    .contact-us-col:first-child{
+        margin-right: 20px;
+    }
+    .contact-us-col{
+        width: 592px;
+        height: 120px;
+        border:1px solid #D4E2E4;
+        border-radius: 3px;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        .cu-col{
+            margin: 20px;
+            .contact-ico{
+                background:$main;
+                border-radius: 46%;
+                padding:20px;
+                width: 72px;
+                height: 72px;
+            }
+            p{
+                font-size: 17px;
+                margin: 5px 0;
+            }
+            h4{
+                color: $black;
+            }
+        }
+    }
+
+}
+
+.cu-col{
+    display: flex;
+    flex-direction: column;
+    input, textarea{
+        width: 592px;
+    }
+
+    h3{
+        font-family: 'Lora', 'serif';
+        font-weight: 400;
+        color: $black;
+    }
+    h5{
+        font-size: 16px;
+        color: $black;
+        font-weight: 700;
+    }
+    a{
+        text-decoration: none;      
+    }
+    p, a{
+        color: $grey;
+        font-size: 16px;
+        line-height: 24px;
+        margin: 0;
+    }
+    .show-on-map{
+        color: $red;
+        text-decoration: underline;
+        font-weight: 700;
+        margin:  40px 0;
+        cursor: pointer;
+    
+    }
+    .contact-btn{
+        text-align: right;
+        button{
+        width: 160px;
+        height: 48px;
+        color: $white;
+        font-size: 15px;
+        background-color: $red;
+        border:none;
+        border-radius: 3px;
+        padding: 10px;
+        outline: none;
+        margin-top: 10px;
+        cursor:pointer;
+        }
+    }
+    
+}
+
+
+@media screen and (max-width:1900px) {
+    .contact-us-row{
+      .contact-us-col{
+          height: 100%;
+      }
+  }
+}
+
+@media screen and (max-width:1700px) {
+    .contactus{
+        width: 77%; 
+    }
+    .contact-us-row{
+      .contact-us-col{
+          height: 100%;
+      }
+  }
+}
+
+@media screen and (max-width:1250px) {
+.contact-us-row{
+       .cu-col{
+        label{
+            width: 100%;
+            input, textarea{
+                width: 100%;
+            }
+        }
+    }
+}
+ 
+}
+
+@media screen and (max-width:1144px) {
+    .contactus{
+        width: 62%; 
+    }
+    .contact-us-row{
+        flex-wrap: wrap;
+        .contact-us-col:first-child{
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+        .contact-us-col{
+            height: 100%;
+        }
+    }
+  }
+
+
+  @media screen and (max-width:768px) {
+  .contactus{
+      width: 100%;
+      h2{
+          margin:20px 40px;
+      }
+
+  }
+  .contact-us-row{
+      flex-direction: column;
+      .cu-col{
+          width: 90%;
+          input, textarea{
+              width: 100%;
+          }
+          .contact-btn{
+              text-align: left;
+          }
+      }
+      .phone-ico{
+          width: 33%;
+      }
+      .contact-us-col{
+          width: 90%;
+          height: 100%;
+          .cu-col{
+              margin: 7px;
+              h4{
+                  font-size: 20px;
+              }
+          }
+      }
+  }
+
+ .contact-us-row{
+      .contact-us-col{
+          .cu-col{
+              p{
+                  font-size: 14px;
+              }
+              h4{
+                  font-size: 17px;
+              }
+          }
+      }
+  }  
+
+}
+
+
+@media screen and (max-width:425px) {
+    .contactus{
+        width: 100%;
+        h2{
+            margin: 20px;
+        }
+  
+    }
+
+
+@media screen and (max-width:320px) {
+    .contact-us-row{
+        .contact-us-col{
+            .cu-col{
+                p{
+                    font-size: 13px;
+                }
+                h4{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+  }
+}
