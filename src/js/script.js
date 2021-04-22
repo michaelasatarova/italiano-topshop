@@ -38,6 +38,16 @@ $("#flags-menu").ddslick({
   imagePosition:'center',
 })
 
+//listing
+
+
+function openFilter(){
+let showFilterBtn = document.getElementById('filters');
+showFilterBtn.classList.toggle('filter-appear');
+console.log(showFilterBtn);
+
+}
+
 
 // listing
 // accordion filter
@@ -80,13 +90,13 @@ for (i = 0; i < acc.length; i++) {
     console.log(this.children[0]);
     console.log(this.children[0]);
 
-    if (panel.style.display === "none") {
-      panel.style.display = "block";
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
       this.children[0].childNodes[1].style.display="block";
       this.children[0].childNodes[3].style.display="none";
 
     } else {
-      panel.style.display = "none";
+      panel.style.display = "block";
       this.children[0].childNodes[3].style.display="none";
       this.children[0].childNodes[1].style.display="block";
     }

@@ -994,6 +994,14 @@ footer {
   }
 }
 
+.filter-appear {
+  display: block;
+}
+
+.green-bg {
+  background-color: green;
+}
+
 .listing-product-page {
   width: 62%;
   margin: auto;
@@ -1041,6 +1049,23 @@ footer {
 
 .listing2 .listing-options {
   width: 272px;
+}
+
+.listing2 .listing-options .small-filters {
+  display: none;
+}
+
+.listing2 .listing-options #show-filter {
+  display: none;
+  background-color: #D4E2E4;
+  border-radius: 3px;
+}
+
+.listing2 .listing-options #show-filter h3 {
+  padding: 18px;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 3px;
 }
 
 .listing2 .listing-options .listing-filter {
@@ -1419,6 +1444,35 @@ footer {
 }
 
 @media screen and (max-width: 725px) {
+  .filters {
+    display: none;
+  }
+  .filter-appear {
+    display: block;
+  }
+  .listing-product-page .listing2 .listing-options .small-filters {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+  }
+  .listing-product-page .listing2 .listing-options .small-filters p {
+    border: 1px solid #D4E2E4;
+    border-radius: 3px;
+    padding: 5px;
+    margin-right: 10px;
+  }
+  .listing-product-page .listing2 .listing-options .small-filters p span {
+    font-weight: 700;
+  }
+  .listing-product-page .listing2 .listing-options #show-filter {
+    display: block;
+  }
+  .listing-product-page .listing2 .listing-options .listing-filter {
+    display: none;
+  }
   .listing-product-page .listing2 .listing-products nav ul {
     width: 100%;
   }
@@ -1467,6 +1521,10 @@ footer {
   .range-slider .slider-thumb {
     display: block;
   }
+}
+
+.green-bg {
+  background-color: #E3EBEE !important;
 }
 
 .personal-data-bg {

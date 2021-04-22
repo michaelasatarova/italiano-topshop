@@ -213,13 +213,16 @@
         <!--ACCORDION-->
         <div class="listing-options">
             
+            <div id="show-filter" class="listing-filter" onclick="openFilter()">
+                <h3> SHOW FILTER</h3>
+            </div>
             <div class="listing-filter">
                 <h3>FILTER</h3>
                 <p>clear all</p>
             </div>
 
-            <div>
-                <button class="accordion">PRICE RANGE <span>
+            <div id="filters" class="filters">
+                <button class="accordion" onclick="this.classList.toggle('green-bg');">PRICE RANGE <span>
                     <svg id="arrow-down" width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M6.5 8.90625C6.78125 9.1875 7.25 9.1875 7.53125 8.90625L13.625 2.84375C13.9063 2.53125 13.9063 2.0625 13.625 1.78125L12.9063 1.0625C12.625 0.78125 12.1563 0.78125 11.8438 1.0625L7 5.875L2.1875 1.0625C1.875 0.781249 1.40625 0.781249 1.125 1.0625L0.406251 1.78125C0.125001 2.0625 0.125001 2.53125 0.406251 2.84375L6.5 8.90625Z" fill="#313439"/>
                     </svg>
@@ -246,7 +249,7 @@
 
                 </div>
 
-                <button class="accordion">SIZE <span>
+                <button class="accordion" onclick="this.classList.toggle('green-bg');">SIZE <span>
                     <svg id="arrow-down" width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M6.5 8.90625C6.78125 9.1875 7.25 9.1875 7.53125 8.90625L13.625 2.84375C13.9063 2.53125 13.9063 2.0625 13.625 1.78125L12.9063 1.0625C12.625 0.78125 12.1563 0.78125 11.8438 1.0625L7 5.875L2.1875 1.0625C1.875 0.781249 1.40625 0.781249 1.125 1.0625L0.406251 1.78125C0.125001 2.0625 0.125001 2.53125 0.406251 2.84375L6.5 8.90625Z" fill="#313439"/>
                     </svg>
@@ -294,7 +297,7 @@
                     </div>
                 </div>
 
-                <button class="accordion">Colour <span>
+                <button class="accordion" onclick="this.classList.toggle('green-bg');" >Colour <span>
                     <svg id="arrow-down" width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M6.5 8.90625C6.78125 9.1875 7.25 9.1875 7.53125 8.90625L13.625 2.84375C13.9063 2.53125 13.9063 2.0625 13.625 1.78125L12.9063 1.0625C12.625 0.78125 12.1563 0.78125 11.8438 1.0625L7 5.875L2.1875 1.0625C1.875 0.781249 1.40625 0.781249 1.125 1.0625L0.406251 1.78125C0.125001 2.0625 0.125001 2.53125 0.406251 2.84375L6.5 8.90625Z" fill="#313439"/>
                     </svg>
@@ -308,7 +311,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
 
-                <button class="accordion">Brand <span>
+                <button class="accordion" onclick="this.classList.toggle('green-bg');">Brand <span>
                     <svg id="arrow-down" width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M6.5 8.90625C6.78125 9.1875 7.25 9.1875 7.53125 8.90625L13.625 2.84375C13.9063 2.53125 13.9063 2.0625 13.625 1.78125L12.9063 1.0625C12.625 0.78125 12.1563 0.78125 11.8438 1.0625L7 5.875L2.1875 1.0625C1.875 0.781249 1.40625 0.781249 1.125 1.0625L0.406251 1.78125C0.125001 2.0625 0.125001 2.53125 0.406251 2.84375L6.5 8.90625Z" fill="#313439"/>
                     </svg>
@@ -323,6 +326,19 @@
                 </div>
 
              </div>
+
+             <div class="small-filters">
+                <div class="small-filter-group">
+                    <p>48 <span>X</span></p>
+                </div>
+                <div class="small-filter-group">
+                    <p>XL <span>X</span></p>
+                </div>
+                <div class="small-filter-group">
+                    <p>Bold <span>X</span></p>
+                </div>
+                <p>clear all</p>
+            </div>
         </div>
 
         <div class="listing-products">
