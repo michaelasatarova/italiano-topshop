@@ -287,7 +287,12 @@
 }
 
 @media screen and (max-width:490px) {
- .choose-delivery-and-payment{
+ .shopping-cart{
+     h2{
+         font-size: 28px;
+     }
+ }
+    .choose-delivery-and-payment{
      .choose-delivery{
          div{
              width: 100%;

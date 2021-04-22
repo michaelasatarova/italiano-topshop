@@ -260,22 +260,14 @@
     }
 }
 
-@media screen and (max-width:1200px) {
-
-    .myaccount{
-        .whereIam{
-            width: 72%;
-            margin: auto;
-        }
-
-    }
-    .myaccount{
-        width: 90%;
-    }
-}
 
 @media screen and (max-width:1200px) {
 .myaccount{
+    width: 90%;
+    .whereIam{
+        width: 72%;
+        margin: auto;
+    }
     section{
         h2{
         width: 600px;
@@ -320,11 +312,53 @@
     }
 }
 
-@media screen and (max-width:650px) {
+@media screen and (max-width:930px) {
     .myaccount{
+        .whereIam{
+            width: 100%;
+        }
+        section{
+            h2{
+                width: 100%;
+                margin: 10px;
+            }
+        }
+        .myaccount-settings{
+          align-items: flex-start;
+          .mas-col1{
+              margin: 10px;
+          }
+        }
+    }
+}
+
+@media screen and (max-width:700px) {
+.myaccount-settings{
+    .mas-col2{
+        width: 100% !important;
+    }
+}
+}
+
+@media screen and (max-width:650px) {
+    form{
+        width: 100%;
+    }
+    .myaccount{
+        .whereIam{
+            width: 100%;
+            a, p{
+                margin: 10px 0;
+            }
+        }
+        section{
+            h2{
+                max-width: 100%;
+            }
+        }
         .myaccount-settings{
             .mas-col1{
-                width: 90%;
+                width: 95%;
                 margin: auto;
             }
             .mas-col{
@@ -336,26 +370,6 @@
                         }
                     }
                 }
-            }
-        }
-    }
-}
-
-@media screen and (max-width:650px){
-form{
-    width: 100%;
-}
-    .myaccount{
-        section{
-            h2{
-                max-width: 100%;
-            }
-        }
-        .whereIam{
-            width: 100%;
-        }
-        .myaccount-settings{
-            .mas-col{
                 .personal-data{
                     h5{
                         margin: 10px 0;
@@ -366,35 +380,55 @@ form{
                     input{
                        width:100%;
                     
-                    }
-                    
+                    }  
+                }
+                .small-btn{
+                    width: 100%;
                 }
             }
         }
     }
 }
 
-@media screen and (max-width:650px){
-    .myaccount{
-        .whereIam{
-            a, p{
-                margin: 10px 0;
-            }
-        }
-    }
-}
+
+
 
 //MEDIA ORDERS
+@media screen and (max-width:1680px){
+.myorders{
+    width: 88%;
+}
+
+}
+
 @media screen and (max-width:1470px){
 .myaccount-settings{
     flex-direction: column;
     .mas-col2{
         margin: 40px;
+        width: 600px;
+    }
+    .orders2{
+        width: 100%;
     }
 }
 }
 
 @media screen and (max-width:1200px){
+    
+    .myaccount{
+        .whereIam{
+            width: 100%;
+        }
+        section{
+            h2{
+                width: 100%;
+            }
+        }
+    }
+    .orders1{
+        width: 100% !important;
+    }
     .mas-col2{
         width: 100%;
         .mobile-visible{

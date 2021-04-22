@@ -270,11 +270,15 @@
             .like-product{
                 float:right;
                 cursor: pointer;
+                stroke: red;
+                fill:none;
+                width: 30px;
+                padding: 5px;
+                margin: 5px;
 
             }
             .like-product-fill{
-                fill:red !important;
-                stroke: red
+                fill:red ;
             }
             h5{
                 font-size: 16px;
@@ -481,6 +485,7 @@ footer{
                 }
                 &:hover .hp-dropdown-content{
                     display: block;
+                    
                 }
                 .hp-dropdown-content{
                     position: relative;
@@ -489,6 +494,9 @@ footer{
                     margin: 0;
                     width: 100%;
                     line-height: 40px;
+                    p{
+                        margin: 5px;
+                    }
                 }
             }
 
@@ -684,15 +692,16 @@ footer{
 }
 
 .hp-footer{
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: left;
     align-items: left;
     .footer-col{
         margin: 0;
     }
     .footer-row{
-        flex-direction: column;
-        justify-content: left;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
         align-items: left;
         max-width: 100%;
     }
@@ -703,6 +712,14 @@ footer{
 }
 
   }
+
+@media screen and (max-width:600px) {
+    .hp-footer{
+        .footer-row{
+            flex-direction: column;
+        }
+    }
+}
 
 @media screen and (max-width:480px) {
 body{

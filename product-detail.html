@@ -195,47 +195,184 @@
 
 <!--MAIN-->
 
-<form class="personal-data-bg">
-    <div class="personal-data">
-        <h2>Registration</h2>
-        
-        <label for="name">
-            <h5>NAME</h5>
-            <input type="name">
-        </label>
-        <label for="email">
-            <h5>EMAIL</h5>
-            <input type="email">
-        </label>
-        <div class="password-section">
-            <label for="password">
-            <h5>PASSWORD</h5>
-            <input type="password">
-            </label>
-
-            <label for="password">
-                <h5>REPEAT PASSWORD</h5>
-                <input type="password">
-            </label>
-        </div>
-        
-        <label class="custom-checkbox">
-            <input type="checkbox" checked="checked">
-            <p>Duis vel turpis feugiat, cursus urna non, commodo lacus</p>
-            <span class="checkmark"></span>
-        </label>
-        <label class="custom-checkbox">
-            <input type="checkbox" >
-            <p>Mauris cursus magna id mi pharetra, eu tincidunt diam condimentum</p>
-            <span class="checkmark"></span>
-        </label>
-        
-
-        <button>Login</button>
+<main class="product-detail">
+    <div class="product-row">
+        <a href="#">Home</a>
+        <p>></p>
+        <a href="#">Listing</a>
+        <p>></p>
+        <a href="#">Lorem ipsum</a> 
     </div>
-</form>
+    <section class="product-detail-row">
+        <div class="product-img-gallery">
+            <img src="/src/img/products/bag1.png" alt="italianotopshop" onclick="document.getElementById('mainImg').src='/src/img/products/bag1.png'">
+            <img src="/src/img/products/bag2.png" alt="italianotopshop" onclick="document.getElementById('mainImg').src='/src/img/products/bag2.png'">
+            <img src="/src/img/products/bag3.png" alt="italianotopshop" onclick="document.getElementById('mainImg').src='/src/img/products/bag3.png'">
+            <img src="/src/img/products/bag4.png" alt="italianotopshop" onclick="document.getElementById('mainImg').src='/src/img/products/bag4.png'">
+        </div>
+        <div class="main-product-image" >
+            <img id="mainImg"  src="/src/img/products/bag2.png" alt="italianotopshop">
+        </div>
+        <div class="product-img-gallery gallery-mobile">
+            <img src="/src/img/products/bag1.png" alt="italianotopshop" onclick="document.getElementById('mainImg').src='/src/img/products/bag1.png'">
+            <img src="/src/img/products/bag2.png" alt="italianotopshop" onclick="document.getElementById('mainImg').src='/src/img/products/bag2.png'">
+            <img src="/src/img/products/bag3.png" alt="italianotopshop" onclick="document.getElementById('mainImg').src='/src/img/products/bag3.png'">
+            <img src="/src/img/products/bag4.png" alt="italianotopshop" onclick="document.getElementById('mainImg').src='/src/img/products/bag4.png'">
+        </div>
 
+        <div class="product-description">
+            <div class="product-description-heading">
+                <h2>Lorem ipsum dolor sit</h2>
+                <svg width="25" height="22" viewBox="0 0 25 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22.4688 2.04688C19.75 -0.25 15.5781 0.078125 13 2.75C10.375 0.078125 6.20312 -0.25 3.48438 2.04688C-0.03125 5 0.484375 9.82812 3.01562 12.4062L11.2188 20.7969C11.6875 21.2656 12.2969 21.5469 13 21.5469C13.6562 21.5469 14.2656 21.2656 14.7344 20.7969L22.9844 12.4062C25.4688 9.82812 25.9844 5 22.4688 2.04688ZM21.3438 10.8125L13.1406 19.2031C13.0469 19.2969 12.9531 19.2969 12.8125 19.2031L4.60938 10.8125C2.875 9.07812 2.54688 5.79688 4.9375 3.78125C6.76562 2.23438 9.57812 2.46875 11.3594 4.25L13 5.9375L14.6406 4.25C16.375 2.46875 19.1875 2.23438 21.0156 3.73438C23.4062 5.79688 23.0781 9.07812 21.3438 10.8125Z" fill="#CBA9A9"/>
+                </svg> 
+            </div>
 
+            <h4>39,90€</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mattis quis ipsum at malesuada. Integer in purus et erat varius ornare. Praesent sollicitudin augue dui, molestie mollis ipsum fermentum eu.</p>
+            <div class="product-size">
+                <h5>SIZE</h5>
+                <div class="select-product-size">
+                    <label class="custom-radio"> 
+                        <input type="radio" name="radio" checked />
+                        <div class="select-size"><p>S</p></div>
+                      </label>
+                      <label class="custom-radio">
+                        <input type="radio" name="radio" />
+                        <div class="select-size"><p>M</p> </div>
+                           
+                      </label><label class="custom-radio">
+                        <input type="radio" name="radio" />
+                        <div class="select-size"><p>L</p></div>
+                      </label>
+                      <label class="custom-radio">
+                        <input type="radio" name="radio" />
+                        <div class="select-size"><p>XL</p></div>
+                      </label>
+                      <label class="custom-radio">
+                        <input type="radio" name="radio" />
+                        <div class="select-size"><p>XXL</p></div>
+                      </label>
+                </div>
+            </div>
+            <div class="product-quantity">
+                <h5>QUANTITY</h5>
+                <div class="number-input">
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" >
+                        <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.5 8.90625C6.78125 9.1875 7.25 9.1875 7.53125 8.90625L13.625 2.84375C13.9063 2.53125 13.9063 2.0625 13.625 1.78125L12.9063 1.0625C12.625 0.78125 12.1563 0.78125 11.8438 1.0625L7 5.875L2.1875 1.0625C1.875 0.781249 1.40625 0.781249 1.125 1.0625L0.406251 1.78125C0.125001 2.0625 0.125001 2.53125 0.406251 2.84375L6.5 8.90625Z" fill="#5E636A"/>
+                        </svg>
+                    </button>
+                    <input class="quantity" min="0" name="quantity" value="1" type="number">
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus">
+                        <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.5 1.09375C7.21875 0.8125 6.75 0.8125 6.46875 1.09375L0.375 7.15625C0.09375 7.46875 0.09375 7.9375 0.375 8.21875L1.09375 8.9375C1.375 9.21875 1.84375 9.21875 2.15625 8.9375L7 4.125L11.8125 8.9375C12.125 9.21875 12.5938 9.21875 12.875 8.9375L13.5938 8.21875C13.875 7.9375 13.875 7.46875 13.5938 7.15625L7.5 1.09375Z" fill="#5E636A"/>
+                        </svg>    
+                    </button>
+                </div>
+            </div>
+            <button class="btn-addtocart">
+                <svg width="18" height="21" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 6.75V5.5C14 2.76562 11.7344 0.5 9 0.5C6.22656 0.5 4 2.76562 4 5.5V6.75H0.25V17.375C0.25 19.1328 1.61719 20.5 3.375 20.5H14.625C16.3438 20.5 17.75 19.1328 17.75 17.375V6.75H14ZM6.5 5.5C6.5 4.13281 7.59375 3 9 3C10.3672 3 11.5 4.13281 11.5 5.5V6.75H6.5V5.5ZM12.75 10.1875C12.2031 10.1875 11.8125 9.79688 11.8125 9.25C11.8125 8.74219 12.2031 8.3125 12.75 8.3125C13.2578 8.3125 13.6875 8.74219 13.6875 9.25C13.6875 9.79688 13.2578 10.1875 12.75 10.1875ZM5.25 10.1875C4.70312 10.1875 4.3125 9.79688 4.3125 9.25C4.3125 8.74219 4.70312 8.3125 5.25 8.3125C5.75781 8.3125 6.1875 8.74219 6.1875 9.25C6.1875 9.79688 5.75781 10.1875 5.25 10.1875Z" fill="white"/>
+                </svg>
+                Add to cart 
+            </button>
+        </div>  
+    </section>
+
+    <section class="product-description-row">
+        <nav> 
+            <a href="/product-detail.html" class="detail-info active-link">
+                <p>Detailed info</p>
+                <div class="orange-line"></div>
+            </a>
+            <a href="/product-detail2.html" class="size-charts">
+                <p>Size charts</p>
+                <div></div>
+            </a>
+        </nav>
+        <div class="detail-info-description">
+            <h5>Vestibulum tellus urna, porta eu mi in, tincidunt ullamcorper nulla. Curabitur finibus ipsum a ex u ltricies porttitor in vitae sem. </h5>
+            <p> Suspendisse sit amet nisl vel orci efficitur luctus. Curabitur ac risus viverra, egestas felis in, congue libero. Etiam fermentum, magna eget pellentesque vehicula, libero turpis vulputate nulla, at porttitor erat tellus sed risus. Nulla facilisi. In hac habitasse platea dictumst. Sed at pulvinar libero. Pellentesque consequat ultricies imperdiet.</p>
+        </div>
+    </section>
+
+    <section class="product-description-row-mobile">
+            <button class="accordion">Detailed info <span>
+                <svg class="arrow-down" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 7H16V9H0V7Z" fill="#5E636A"/>
+                    <path d="M9 8.74224e-08L9 16H7L7 0L9 8.74224e-08Z" fill="#5E636A"/>
+                </svg>
+                    
+
+                <svg class="arrow-up" width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0H16V2H0V0Z" fill="#E0672E"/>
+                </svg>
+                     
+                </span>
+            </button>	   
+            <div class="panel">
+                <h5>Vestibulum tellus urna, porta eu mi in, tincidunt ullamcorper nulla. Curabitur finibus ipsum a ex u ltricies porttitor in vitae sem. </h5>
+                <p> Suspendisse sit amet nisl vel orci efficitur luctus. Curabitur ac risus viverra, egestas felis in, congue libero. Etiam fermentum, magna eget pellentesque vehicula, libero turpis vulputate nulla, at porttitor erat tellus sed risus. Nulla facilisi. In hac habitasse platea dictumst. Sed at pulvinar libero. Pellentesque consequat ultricies imperdiet.</p>
+            </div>
+
+            <button class="accordion">Size chart<span>
+                <svg class="arrow-down" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 7H16V9H0V7Z" fill="#5E636A"/>
+                    <path d="M9 8.74224e-08L9 16H7L7 0L9 8.74224e-08Z" fill="#5E636A"/>
+                </svg>
+                    
+
+                <svg class="arrow-up" width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0H16V2H0V0Z" fill="#E0672E"/>
+                </svg>
+                     
+                </span>
+            </button>	   
+            <div class="panel">
+                <h5>Vestibulum tellus urna, porta eu mi in, tincidunt ullamcorper nulla. Curabitur finibus ipsum a ex u ltricies porttitor in vitae sem. </h5>
+                <p> Suspendisse sit amet nisl vel orci efficitur luctus. Curabitur ac risus viverra, egestas felis in, congue libero. Etiam fermentum, magna eget pellentesque vehicula, libero turpis vulputate nulla, at porttitor erat tellus sed risus. Nulla facilisi. In hac habitasse platea dictumst. Sed at pulvinar libero. Pellentesque consequat ultricies imperdiet.</p>
+            </div>
+    </section>
+
+    <section class="hp-new-arrivals product-detail-recomendation">
+        <h2>Recommend products</h2>
+        <div class="hp-products">
+            <div class="hp-product" >
+                <svg onclick="this.classList.toggle('like-product-fill');" onclick="this.classList.toggle('like-product-fill');" class="like-product"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 4.435c-1.989-5.399-12-4.597-12 3.568 0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-8.118-10-8.999-12-3.568z"/></svg>
+                    
+                <br>
+                 <img src="/src/img/products/bag1.png" alt="italian bags"> 
+                 <h5>Milano style purse</h5>  
+                 <p>75 €</p>
+            </div>
+
+            <div class="hp-product">
+                <svg onclick="this.classList.toggle('like-product-fill');" onclick="this.classList.toggle('like-product-fill');" class="like-product"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 4.435c-1.989-5.399-12-4.597-12 3.568 0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-8.118-10-8.999-12-3.568z"/></svg>
+                <br>
+                 <img src="/src/img/products/bag2.png" alt="italian bags"> 
+                 <h5>Italian 100% Silk Square Scarf</h5>  
+                 <p>35 €</p>
+            </div>
+
+            <div class="hp-product">
+                <svg onclick="this.classList.toggle('like-product-fill');" onclick="this.classList.toggle('like-product-fill');" class="like-product"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 4.435c-1.989-5.399-12-4.597-12 3.568 0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-8.118-10-8.999-12-3.568z"/></svg>
+                <br>
+                 <img src="/src/img/products/bag3.png" alt="italian bags"> 
+                 <h5>Italian Silk Men Yellow Paisley Ties And Pocket Square</h5>  
+                 <p>109 €</p>
+            </div>
+
+            <div class="hp-product hp-product-display-none" >
+                <svg onclick="this.classList.toggle('like-product-fill');" onclick="this.classList.toggle('like-product-fill');" class="like-product"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 4.435c-1.989-5.399-12-4.597-12 3.568 0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-8.118-10-8.999-12-3.568z"/></svg>
+                <br>
+                 <img src="/src/img/products/bag4.png" alt="italian bags"> 
+                 <h5>Italian Floral Purse</h5>  
+                 <p>24 €</p>
+            </div>
+        </div>
+    </section>
+</main>
 
 <!--FOOTER-->
 <footer>
