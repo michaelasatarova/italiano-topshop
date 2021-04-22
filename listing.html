@@ -217,109 +217,112 @@
                 <h3>FILTER</h3>
                 <p>clear all</p>
             </div>
-            
-            <button class="accordion">PRICE RANGE <span>
-                <svg id="arrow-down" width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M6.5 8.90625C6.78125 9.1875 7.25 9.1875 7.53125 8.90625L13.625 2.84375C13.9063 2.53125 13.9063 2.0625 13.625 1.78125L12.9063 1.0625C12.625 0.78125 12.1563 0.78125 11.8438 1.0625L7 5.875L2.1875 1.0625C1.875 0.781249 1.40625 0.781249 1.125 1.0625L0.406251 1.78125C0.125001 2.0625 0.125001 2.53125 0.406251 2.84375L6.5 8.90625Z" fill="#313439"/>
-                </svg>
 
-                <svg id="arrow-up" width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M7.5 1.09375C7.21875 0.8125 6.75 0.8125 6.46875 1.09375L0.375 7.15625C0.09375 7.46875 0.09375 7.9375 0.375 8.21875L1.09375 8.9375C1.375 9.21875 1.84375 9.21875 2.15625 8.9375L7 4.125L11.8125 8.9375C12.125 9.21875 12.5938 9.21875 12.875 8.9375L13.5938 8.21875C13.875 7.9375 13.875 7.46875 13.5938 7.15625L7.5 1.09375Z" fill="#313439"/>
-                </svg> 
-                </span>
-            </button>	   
-            <div class="panel ">
-                 <!-- <div class="slider">
-                      <input type="range" id="custom-slider" min="0" max="200" value="100" steps="1">
-                     <div class="show-value">
-                         <span id="current-value">100€</span>
-                     </div>
-                </div> -->
-                <div class="range-slider" id="facet-price-range-slider">
-  
-                    <input name="range-1" value="0" min="0" max="500" step="1" type="range">
-                  
-                    <input name="range-2" value="259" min="0" max="500" step="1" type="range">
-                  
+            <div>
+                <button class="accordion">PRICE RANGE <span>
+                    <svg id="arrow-down" width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.5 8.90625C6.78125 9.1875 7.25 9.1875 7.53125 8.90625L13.625 2.84375C13.9063 2.53125 13.9063 2.0625 13.625 1.78125L12.9063 1.0625C12.625 0.78125 12.1563 0.78125 11.8438 1.0625L7 5.875L2.1875 1.0625C1.875 0.781249 1.40625 0.781249 1.125 1.0625L0.406251 1.78125C0.125001 2.0625 0.125001 2.53125 0.406251 2.84375L6.5 8.90625Z" fill="#313439"/>
+                    </svg>
+
+                    <svg id="arrow-up" width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.5 1.09375C7.21875 0.8125 6.75 0.8125 6.46875 1.09375L0.375 7.15625C0.09375 7.46875 0.09375 7.9375 0.375 8.21875L1.09375 8.9375C1.375 9.21875 1.84375 9.21875 2.15625 8.9375L7 4.125L11.8125 8.9375C12.125 9.21875 12.5938 9.21875 12.875 8.9375L13.5938 8.21875C13.875 7.9375 13.875 7.46875 13.5938 7.15625L7.5 1.09375Z" fill="#313439"/>
+                    </svg> 
+                    </span>
+                </button>	   
+                <div class="panel ">
+                    <!-- <div class="slider">
+                        <input type="range" id="custom-slider" min="0" max="200" value="100" steps="1">
+                        <div class="show-value">
+                            <span id="current-value">100€</span>
+                        </div>
+                    </div> -->
+                    <div class="range-slider" id="facet-price-range-slider">
+    
+                        <input name="range-1" value="0" min="0" max="500" step="1" type="range">
+                    
+                        <input name="range-2" value="259" min="0" max="500" step="1" type="range">
+                    
+                    </div>
+
                 </div>
 
-            </div>
+                <button class="accordion">SIZE <span>
+                    <svg id="arrow-down" width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.5 8.90625C6.78125 9.1875 7.25 9.1875 7.53125 8.90625L13.625 2.84375C13.9063 2.53125 13.9063 2.0625 13.625 1.78125L12.9063 1.0625C12.625 0.78125 12.1563 0.78125 11.8438 1.0625L7 5.875L2.1875 1.0625C1.875 0.781249 1.40625 0.781249 1.125 1.0625L0.406251 1.78125C0.125001 2.0625 0.125001 2.53125 0.406251 2.84375L6.5 8.90625Z" fill="#313439"/>
+                    </svg>
 
-            <button class="accordion">SIZE <span>
-                <svg id="arrow-down" width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M6.5 8.90625C6.78125 9.1875 7.25 9.1875 7.53125 8.90625L13.625 2.84375C13.9063 2.53125 13.9063 2.0625 13.625 1.78125L12.9063 1.0625C12.625 0.78125 12.1563 0.78125 11.8438 1.0625L7 5.875L2.1875 1.0625C1.875 0.781249 1.40625 0.781249 1.125 1.0625L0.406251 1.78125C0.125001 2.0625 0.125001 2.53125 0.406251 2.84375L6.5 8.90625Z" fill="#313439"/>
-                </svg>
+                    <svg id="arrow-up" width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.5 1.09375C7.21875 0.8125 6.75 0.8125 6.46875 1.09375L0.375 7.15625C0.09375 7.46875 0.09375 7.9375 0.375 8.21875L1.09375 8.9375C1.375 9.21875 1.84375 9.21875 2.15625 8.9375L7 4.125L11.8125 8.9375C12.125 9.21875 12.5938 9.21875 12.875 8.9375L13.5938 8.21875C13.875 7.9375 13.875 7.46875 13.5938 7.15625L7.5 1.09375Z" fill="#313439"/>
+                    </svg> 
+                    </span>
+                </button>	   
+                <div class="panel">
+                    <div class="check-option">
+                        <label class="custom-checkbox">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>   
+                        <p>42</p>
+                        <small>(134)</small>
+                    </div>
 
-                <svg id="arrow-up" width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M7.5 1.09375C7.21875 0.8125 6.75 0.8125 6.46875 1.09375L0.375 7.15625C0.09375 7.46875 0.09375 7.9375 0.375 8.21875L1.09375 8.9375C1.375 9.21875 1.84375 9.21875 2.15625 8.9375L7 4.125L11.8125 8.9375C12.125 9.21875 12.5938 9.21875 12.875 8.9375L13.5938 8.21875C13.875 7.9375 13.875 7.46875 13.5938 7.15625L7.5 1.09375Z" fill="#313439"/>
-                </svg> 
-                </span>
-            </button>	   
-            <div class="panel">
-                <div class="check-option">
-                    <label class="custom-checkbox">
-                        <input type="checkbox">
-                        <span class="checkmark"></span>
-                     </label>   
-                    <p>42</p>
-                    <small>(134)</small>
+                    <div class="check-option">
+                        <label class="custom-checkbox">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>   
+                        <p>42</p>
+                        <small>(134)</small>
+                    </div>
+
+                    <div class="check-option">
+                        <label class="custom-checkbox">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>   
+                        <p>42</p>
+                        <small>(134)</small>
+                    </div>
+
+                    <div class="check-option">
+                        <label class="custom-checkbox">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>   
+                        <p>42</p>
+                        <small>(134)</small>
+                    </div>
                 </div>
 
-                <div class="check-option">
-                    <label class="custom-checkbox">
-                        <input type="checkbox">
-                        <span class="checkmark"></span>
-                     </label>   
-                    <p>42</p>
-                    <small>(134)</small>
+                <button class="accordion">Colour <span>
+                    <svg id="arrow-down" width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.5 8.90625C6.78125 9.1875 7.25 9.1875 7.53125 8.90625L13.625 2.84375C13.9063 2.53125 13.9063 2.0625 13.625 1.78125L12.9063 1.0625C12.625 0.78125 12.1563 0.78125 11.8438 1.0625L7 5.875L2.1875 1.0625C1.875 0.781249 1.40625 0.781249 1.125 1.0625L0.406251 1.78125C0.125001 2.0625 0.125001 2.53125 0.406251 2.84375L6.5 8.90625Z" fill="#313439"/>
+                    </svg>
+
+                    <svg id="arrow-up" width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.5 1.09375C7.21875 0.8125 6.75 0.8125 6.46875 1.09375L0.375 7.15625C0.09375 7.46875 0.09375 7.9375 0.375 8.21875L1.09375 8.9375C1.375 9.21875 1.84375 9.21875 2.15625 8.9375L7 4.125L11.8125 8.9375C12.125 9.21875 12.5938 9.21875 12.875 8.9375L13.5938 8.21875C13.875 7.9375 13.875 7.46875 13.5938 7.15625L7.5 1.09375Z" fill="#313439"/>
+                    </svg> 
+                    </span>
+                </button>
+                <div class="panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
 
-                <div class="check-option">
-                    <label class="custom-checkbox">
-                        <input type="checkbox">
-                        <span class="checkmark"></span>
-                     </label>   
-                    <p>42</p>
-                    <small>(134)</small>
+                <button class="accordion">Brand <span>
+                    <svg id="arrow-down" width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.5 8.90625C6.78125 9.1875 7.25 9.1875 7.53125 8.90625L13.625 2.84375C13.9063 2.53125 13.9063 2.0625 13.625 1.78125L12.9063 1.0625C12.625 0.78125 12.1563 0.78125 11.8438 1.0625L7 5.875L2.1875 1.0625C1.875 0.781249 1.40625 0.781249 1.125 1.0625L0.406251 1.78125C0.125001 2.0625 0.125001 2.53125 0.406251 2.84375L6.5 8.90625Z" fill="#313439"/>
+                    </svg>
+
+                    <svg id="arrow-up" width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.5 1.09375C7.21875 0.8125 6.75 0.8125 6.46875 1.09375L0.375 7.15625C0.09375 7.46875 0.09375 7.9375 0.375 8.21875L1.09375 8.9375C1.375 9.21875 1.84375 9.21875 2.15625 8.9375L7 4.125L11.8125 8.9375C12.125 9.21875 12.5938 9.21875 12.875 8.9375L13.5938 8.21875C13.875 7.9375 13.875 7.46875 13.5938 7.15625L7.5 1.09375Z" fill="#313439"/>
+                    </svg> 
+                    </span>
+                </button>
+                <div class="panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
 
-                <div class="check-option">
-                    <label class="custom-checkbox">
-                        <input type="checkbox">
-                        <span class="checkmark"></span>
-                     </label>   
-                    <p>42</p>
-                    <small>(134)</small>
-                </div>
-            </div>
-
-            <button class="accordion">Colour <span>
-                <svg id="arrow-down" width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M6.5 8.90625C6.78125 9.1875 7.25 9.1875 7.53125 8.90625L13.625 2.84375C13.9063 2.53125 13.9063 2.0625 13.625 1.78125L12.9063 1.0625C12.625 0.78125 12.1563 0.78125 11.8438 1.0625L7 5.875L2.1875 1.0625C1.875 0.781249 1.40625 0.781249 1.125 1.0625L0.406251 1.78125C0.125001 2.0625 0.125001 2.53125 0.406251 2.84375L6.5 8.90625Z" fill="#313439"/>
-                </svg>
-
-                <svg id="arrow-up" width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M7.5 1.09375C7.21875 0.8125 6.75 0.8125 6.46875 1.09375L0.375 7.15625C0.09375 7.46875 0.09375 7.9375 0.375 8.21875L1.09375 8.9375C1.375 9.21875 1.84375 9.21875 2.15625 8.9375L7 4.125L11.8125 8.9375C12.125 9.21875 12.5938 9.21875 12.875 8.9375L13.5938 8.21875C13.875 7.9375 13.875 7.46875 13.5938 7.15625L7.5 1.09375Z" fill="#313439"/>
-                </svg> 
-                </span>
-            </button>
-            <div class="panel">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
-
-            <button class="accordion">Brand <span>
-                <svg id="arrow-down" width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M6.5 8.90625C6.78125 9.1875 7.25 9.1875 7.53125 8.90625L13.625 2.84375C13.9063 2.53125 13.9063 2.0625 13.625 1.78125L12.9063 1.0625C12.625 0.78125 12.1563 0.78125 11.8438 1.0625L7 5.875L2.1875 1.0625C1.875 0.781249 1.40625 0.781249 1.125 1.0625L0.406251 1.78125C0.125001 2.0625 0.125001 2.53125 0.406251 2.84375L6.5 8.90625Z" fill="#313439"/>
-                </svg>
-
-                <svg id="arrow-up" width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M7.5 1.09375C7.21875 0.8125 6.75 0.8125 6.46875 1.09375L0.375 7.15625C0.09375 7.46875 0.09375 7.9375 0.375 8.21875L1.09375 8.9375C1.375 9.21875 1.84375 9.21875 2.15625 8.9375L7 4.125L11.8125 8.9375C12.125 9.21875 12.5938 9.21875 12.875 8.9375L13.5938 8.21875C13.875 7.9375 13.875 7.46875 13.5938 7.15625L7.5 1.09375Z" fill="#313439"/>
-                </svg> 
-                </span>
-            </button>
-            <div class="panel">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
+             </div>
         </div>
 
         <div class="listing-products">
@@ -353,7 +356,7 @@
                         <svg onclick="this.classList.toggle('like-product-fill');" onclick="this.classList.toggle('like-product-fill');" class="like-product"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 4.435c-1.989-5.399-12-4.597-12 3.568 0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-8.118-10-8.999-12-3.568z"/></svg>
                         <br>
                          <img src="/src/img/products/bag3.png" alt="italian bags"> 
-                         <h5>Italian Silk Men Yellow Paisley Ties And Pocket Square</h5>  
+                         <h5>Italian Silk Men Yellow Paisley Ties And Pocket </h5>  
                          <p>109 €</p>
                     </div>
         

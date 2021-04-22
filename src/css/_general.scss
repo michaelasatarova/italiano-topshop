@@ -47,7 +47,19 @@ body{
         color:green;
     }
 
-    
+    .like-product{
+        float:right;
+        cursor: pointer;
+        stroke: red;
+        fill:none;
+        width: 30px;
+        padding: 5px;
+        margin: 5px;
+
+    }
+    .like-product-fill{
+        fill:red ;
+    }
 
   //FORMS  
     label{

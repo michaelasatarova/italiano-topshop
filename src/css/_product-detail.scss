@@ -308,8 +308,12 @@
         display: none;
     }
     .gallery-mobile{
-        display: block;
         margin: 10px;
+        flex-wrap: nowrap;
+        display: flex;
+        flex-direction: row;
+        overflow: scroll;
+
     }
     .product-description{
         width: 100%;
@@ -354,5 +358,36 @@
         }
     }
 }
+
 }
 
+@media screen and (max-width:375px) {
+ .product-detail-row{
+     .product-description{
+         .product-size, .product-quantity{
+             h5{
+                 width: auto;
+                 margin-right: 10px;
+             }
+         }
+         .product-description-heading{
+             h2{
+                 font-size: 24px ;
+             }
+         }
+     }
+     .main-product-image{
+         max-width: 90% !important;
+         height: auto;
+        img{
+            width: 250px !important;
+            height: auto;  
+        }
+     }
+ }
+ .product-row{
+     p, a{
+         padding: 0;
+     }
+ }
+}
